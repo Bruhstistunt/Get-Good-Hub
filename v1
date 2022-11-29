@@ -1,9 +1,9 @@
 repeat wait() until game:IsLoaded()
-if game.Workspace.GlobalReference.Version.Value == "Game Version: 7.8.9e" then
+if game.Workspace.GlobalReference.Version.Value == "Game Version: 7.9.0" then
 print("Checking game version..")
 print("Checking WhiteList..")
 wait(1.35)
-print("Game version checked... 7.8.9e")
+print("Game version checked... 7.9.0")
 
 local HWIDTable = loadstring(game:HttpGet("https://pastebin.com/raw/c237uS0Q"))()
 local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
