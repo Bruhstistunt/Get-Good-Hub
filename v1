@@ -1,9 +1,15 @@
 repeat wait() until game:IsLoaded()
-if game.Workspace.GlobalReference.Version.Value == "Game Version: 7.9.0" then
+
+if game.Workspace.GlobalReference.Version.Value == "Game Version: 7.9.0" or game.Workspace.GlobalReference.Version.Value == "Game Version: 7.9.1d" or game.Workspace.GlobalReference.Version.Value == "Game Version: 7.9.1a" then
 print("Checking game version..")
+wait(0.50)
+print(game.Workspace.GlobalReference.Version.Value)
+wait(0.25)
 print("Checking WhiteList..")
+wait(0.60)
+print(game:GetService("RbxAnalyticsService"):GetClientId())
 wait(1.35)
-print("Game version checked... 7.9.0")
+print("Game Version/HWID Checked, Loading Hub..")
 
 local HWIDTable = loadstring(game:HttpGet("https://pastebin.com/raw/c237uS0Q"))()
 local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
@@ -20,15 +26,15 @@ print("Loaded in 4.73 seconds")
 loadstring(game:HttpGet("https://pastebin.com/raw/XiN9XAaM"))() -- ez
 
 local colors = {
-    SchemeColor = Color3.fromRGB(207,181,59), 
+    SchemeColor = Color3.fromRGB(0,100,0), 
     Background = Color3.fromRGB(0, 0, 0),
     Header = Color3.fromRGB(0, 0, 0),
-    TextColor = Color3.fromRGB(255,255,0),
+    TextColor = Color3.fromRGB(0,255,0),
     ElementColor = Color3.fromRGB(0, 0, 0)
 }
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("                                     🏆Get Good Hub🏆", colors)
+local Window = Library.CreateLib("🧪                    сука блять, Владимир Путин Hub                     🧪", colors)
 local General = Window:NewTab("General")
 local GeneralSection = General:NewSection("Main")
 local Sam = Window:NewTab("Sam")
@@ -2291,9 +2297,15 @@ while _G.Spawn do
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local Lp = game:GetService("Players").LocalPlayer
+local DevilFruit = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit
+
+if DevilFruit.Value == "Light" then
+_G.HarveyTrash = "VTCrv"
+end
+
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2332,9 +2344,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2348,9 +2359,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2364,9 +2374,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2380,9 +2389,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2396,9 +2404,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2412,9 +2419,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2428,9 +2434,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2444,9 +2449,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2460,9 +2464,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2476,9 +2479,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2492,9 +2494,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2508,9 +2509,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2524,9 +2524,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2540,9 +2539,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2556,9 +2554,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2572,10 +2569,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2589,10 +2584,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2606,9 +2599,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2622,9 +2614,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2638,9 +2629,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2654,9 +2644,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2670,9 +2659,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2686,9 +2674,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2702,9 +2689,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2718,9 +2704,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2734,9 +2719,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2750,9 +2734,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2766,9 +2749,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2782,9 +2764,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2798,9 +2779,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2814,9 +2794,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2830,9 +2809,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2846,9 +2824,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2862,9 +2839,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2878,9 +2854,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2894,9 +2869,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2910,9 +2884,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2926,9 +2899,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2942,9 +2914,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2958,9 +2929,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2974,9 +2944,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -2990,9 +2959,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -3006,9 +2974,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -3022,9 +2989,8 @@ game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireSe
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Light);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "LightPower2",
@@ -3047,9 +3013,15 @@ FruitFarmSection:NewToggle("Quake AutoFarm", "didnt test yet", function(state)
             _G.Spawn = true
 while _G.Spawn do
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local Lp = game:GetService("Players").LocalPlayer
+local DevilFruit = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit
+
+if DevilFruit.Value == "Quake" then
+_G.HarveyTrash = "VTCebvc"
+end
+
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3062,9 +3034,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3077,9 +3048,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3092,9 +3062,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3107,9 +3076,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3122,9 +3090,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3137,9 +3104,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3152,9 +3118,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3167,9 +3132,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3182,9 +3146,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3197,9 +3160,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3212,9 +3174,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3226,9 +3187,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3241,9 +3201,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3256,9 +3215,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3271,9 +3229,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3286,9 +3243,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3301,9 +3257,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3316,9 +3271,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3331,9 +3285,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3346,9 +3299,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3361,9 +3313,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3376,9 +3327,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3391,9 +3341,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -4553,18 +4502,20 @@ end)
 until _G.idk == true
 end)
 
-
-HakiSection:NewToggle("Auto Buso Usage", "ez", function(state)
+HakiSection:NewToggle("Auto Buso", "ez", function(state)
     if state then
             _G.Spawn = true
 while _G.Spawn do
-wait()
+    wait(0)
+    pcall(function()
 local plrid = tostring(game.Players.LocalPlayer.UserId)
+if workspace.UserData["User_"..plrid].UsingHaki.Value == false then
+wait(1.30)
 workspace.UserData["User_"..plrid].UpdateHaki:FireServer()
-wait(300)
-local plrid = tostring(game.Players.LocalPlayer.UserId)
+end
+if game:GetService("Workspace").UserData["User_"..plrid].HakiBar.Value == 100 then
 workspace.UserData["User_"..plrid].UpdateHaki:FireServer()
-wait()
+wait(0.5)
 workspace.UserData["User_"..plrid].III:FireServer("On",1)
 wait()
 workspace.UserData["User_"..plrid].III:FireServer("Off",1)
@@ -4910,9 +4861,11 @@ wait()
 workspace.UserData["User_"..plrid].III:FireServer("Off",1)
 wait(20)
 end
-	else
-		_G.Spawn = false
-	end
+end)
+end
+    else
+        _G.Spawn = false
+    end
 end)
 
 -- emotes --
@@ -4937,18 +4890,5 @@ game:GetService("Workspace").UserData["User_"..Final].Data.CB_Mark16.Value = tru
 -- blue gui --
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/AltsegoD/script/master/OnePieceLegendary.lua')))()
 
-local TextWhenYouDie = "Protected By Blood Hub"
-
-local Plr = game.Players.LocalPlayer
-local Char = Plr.Character or Plr.CharacterAdded:Wait()
-
-Char:WaitForChild("Humanoid").Died:Connect(function()
-   for _,v in pairs(game.CoreGui.RobloxGui.PlayerListMaster:GetDescendants()) do
-       if v.Name == "p_"..Plr.UserId then
-           v.ChildrenFrame.NameFrame.BGFrame.OverlayFrame.PlayerName.PlayerName.Text = tostring(TextWhenYouDie)
-       end
-   end
-end)
-end
-
 loadstring(game:HttpGet("https://pastebin.com/raw/RC6HtXg0"))() -- stealing fruits main hub
+end
