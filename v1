@@ -11,7 +11,7 @@ print(game:GetService("RbxAnalyticsService"):GetClientId())
 wait(1.35)
 print("Game Version/HWID Checked, Loading Hub..")
 
-local HWIDTable = loadstring(game:HttpGet("https://pastebin.com/raw/c237uS0Q"))()
+local HWIDTable = loadstring(game:HttpGet("https://pastebin.com/raw/byRV9J0u"))()
 local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
 
 for i,v in pairs(HWIDTable) do
