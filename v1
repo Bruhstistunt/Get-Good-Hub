@@ -5075,10 +5075,8 @@ local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
 for i,v in pairs(HWIDTable) do
 	if v == HWID then
 		local Drinks = Window:NewTab("Premium")
-		local DrinksSection = Drinks:NewSection("Dupe👑")
-	end
-end
-
+		
+local DrinksSection = Drinks:NewSection("Dupe👑")
 local DrinksSection = Drinks:NewSection("Compass👑")
 DrinksSection:NewButton("Dupe Compass", "at least 1 to be ready so it would work", function()
 -- claiming sam
@@ -5111,5 +5109,7 @@ end
         _G.Spawn = false
     end
 end)
+	end
+end
 
 end
