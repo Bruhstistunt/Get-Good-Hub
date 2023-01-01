@@ -5079,4 +5079,37 @@ for i,v in pairs(HWIDTable) do
 	end
 end
 
+local DrinksSection = Drinks:NewSection("Compass👑")
+DrinksSection:NewButton("Dupe Compass", "at least 1 to be ready so it would work", function()
+-- claiming sam
+local args = {
+    [1] = "Claim1"
+}
+
+workspace.Merchants.QuestMerchant.Clickable.Retum:FireServer(unpack(args))
+wait(0.13)
+local tpservice= game:GetService("TeleportService") -- auto leave
+local plr = game.Players.LocalPlayer
+
+tpservice:Teleport(game.PlaceId, plr)
+end)
+
+DrinksSection:NewToggle("Auto Drop", "ez", function(state)
+    if state then
+            _G.Spawn = true
+while _G.Spawn do
+wait()
+local plr = game.Players.LocalPlayer
+local char = plr.Character
+
+for i,v in pairs(plr.Backpack:GetChildren()) do
+v.Parent = char;
+v.Parent = workspace
+end
+end
+    else
+        _G.Spawn = false
+    end
+end)
+
 end
