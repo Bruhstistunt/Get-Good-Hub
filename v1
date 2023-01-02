@@ -1,4 +1,4 @@
-repeat wait() until game:IsLoaded()
+
 
 if game.Workspace.GlobalReference.Version.Value == "Game Version: 7.9.4a" or game.Workspace.GlobalReference.Version.Value == "Game Version: 7.9.1d" or game.Workspace.GlobalReference.Version.Value == "Game Version: 7.9.1a" then
 print("Checking game version..")
