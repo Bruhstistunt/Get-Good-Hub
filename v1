@@ -2368,6 +2368,7 @@ FruitFarmSection:NewToggle("Light AutoFarm", "minimum 1.5 sniper affy!", functio
     if state then
             _G.Spawn = true
 while _G.Spawn do
+pcall(function()
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
@@ -3076,6 +3077,7 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireServer(unpack(args))
 wait(0.1)
+end)
 end
     else
         _G.Spawn = false
