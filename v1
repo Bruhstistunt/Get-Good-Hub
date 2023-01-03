@@ -3452,748 +3452,770 @@ end
 	end
 end)
 
-FruitFarmSection:NewToggle("Rumble El-Thor AutoFarm", "ez", function(state)
+FruitFarmSection:NewToggle("Rumble Blitz AutoFarm", "ez", function(state)
 	if state then
 			_G.Spawn = true
 while _G.Spawn do
 wait(0.2)
 pcall(function()
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+local Lp = game:GetService("Players").LocalPlayer
+local DevilFruit = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit
+local DevilFruit2 = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit2
+
+if DevilFruit.Value == "Rumble" or DevilFruit2.Value == "Rumble" then
+_G.HarveyTrash = "VTCzyhf"
+end
+
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Workspace.Enemies["Lv4 Boar"].Torso.Position)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower3",
     [3] = "StopCharging",
-    [4] = Vector3.new(-246.053466796875, 276.9638977050781, 342.4373779296875),
-    [5] = workspace.Enemies:FindFirstChild("Lv32 Thief").Head,
-    [6] = -34565654676,
-    [7] = Vector3.new(-249.94497680664062, 479.39593505859375, 360.17681884765625)
+    [4] = game.workspace.Enemies["Lv4 Boar"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "RumblePower3",
+    [3] = "StopCharging",
+    [4] = game.workspace.Enemies["Lv9 Bandit"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "RumblePower3",
+    [3] = "StopCharging",
+    [4] = game.workspace.Enemies["Lv2 Angry Bob"].Torso.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "RumblePower3",
+    [3] = "StopCharging",
+    [4] = game.workspace.Enemies["Lv1 Crab"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "RumblePower3",
+    [3] = "StopCharging",
+    [4] = game.workspace.Enemies["Lv4 Freddy"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "RumblePower3",
+    [3] = "StopCharging",
+    [4] = game.workspace.Enemies["Lv12 Thug"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "RumblePower3",
+    [3] = "StopCharging",
+    [4] = game.workspace.Enemies["Lv20 Thief"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "RumblePower3",
+    [3] = "StopCharging",
+    [4] = game.workspace.Enemies["Lv32 Thief"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
+wait(1.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "RumblePower4",
+    [3] = "StopCharging",
+    [4] = game.workspace.Enemies["Lv14 Bandit"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Workspace.Enemies["Lv14 Bandit"].Torso.Position)
+wait(0.4)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "RumblePower4",
+    [3] = "StopCharging",
+    [4] = game.workspace.Enemies["Lv14 Bandit"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
 wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower3",
     [3] = "StopCharging",
-    [4] = Vector3.new(-258.8666076660156, 276.99945068359375, 355.0993957519531),
-    [5] = workspace.Enemies:FindFirstChild("Lv32 Thief").Head,
-    [6] = -34565654676,
-    [7] = Vector3.new(-248.70030212402344, 479.0649719238281, 359.8348388671875)
+    [4] = game.workspace.Enemies["Lv40 Cave Demon"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower3",
     [3] = "StopCharging",
-    [4] = Vector3.new(-241.70654296875, 272, 359.59478759765625),
-    [5] = workspace.IslandWindmill.OutterDune.Beach,
-    [6] = -34565654676,
-    [7] = Vector3.new(-247.797119140625, 479.3836975097656, 359.862060546875)
+    [4] = game.workspace.Enemies["Lv4 Crab"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower3",
     [3] = "StopCharging",
-    [4] = Vector3.new(-159.4327850341797, 272.1806640625, 311.2400817871094),
-    [5] = workspace.Enemies:FindFirstChild("Lv20 Thief").Head,
-    [6] = -34565654676,
-    [7] = Vector3.new(-246.95458984375, 479.0545654296875, 362.4568786621094)
+    [4] = game.workspace.Enemies["Lv3 Crab"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower3",
     [3] = "StopCharging",
-    [4] = Vector3.new(-177.7139129638672, 275.9810791015625, 389.4107971191406),
-    [5] = workspace.Enemies:FindFirstChild("Lv20 Thief").Head,
-    [6] = -34565654676,
-    [7] = Vector3.new(-246.7118377685547, 479.75640869140625, 360.8190002441406)
-}
-
-game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
-local args = {
-    [1] = v,
-    [2] = "RumblePower2",
-    [3] = "StopCharging",
-    [4] = Vector3.new(-314.93743896484375, 274.83074951171875, 307.914306640625),
-    [5] = workspace.Enemies:FindFirstChild("Lv20 Thief").Head,
-    [6] = -34565654676,
-    [7] = Vector3.new(-248.7090606689453, 479.38885498046875, 359.68365478515625)
-}
-
-game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
-local args = {
-    [1] = v,
-    [2] = "RumblePower2",
-    [3] = "StopCharging",
-    [4] = Vector3.new(-317.947265625, 274.9814147949219, 387.4133605957031),
-    [5] = workspace.Enemies:FindFirstChild("Lv20 Thief").Head,
-    [6] = -34565654676,
-    [7] = Vector3.new(-249.4812774658203, 479.7585144042969, 363.59918212890625)
-}
-
-game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
-local args = {
-    [1] = v,
-    [2] = "RumblePower2",
-    [3] = "StopCharging",
-    [4] = Vector3.new(-417.7540283203125, 217.9892120361328, -199.2932891845703),
-    [5] = workspace.Enemies:FindFirstChild("Lv12 Thug").Head,
-    [6] = -34565654676,
-    [7] = Vector3.new(-381.42498779296875, 286.66021728515625, -186.4344940185547)
-}
-
-game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
-local args = {
-    [1] = v,
-    [2] = "RumblePower2",
-    [3] = "StopCharging",
-    [4] = Vector3.new(-366.15411376953125, 230.5571746826172, -483.4948425292969),
-    [5] = workspace.Enemies:FindFirstChild("Lv4 Freddy").Head,
-    [6] = -34565654676,
-    [7] = Vector3.new(-340.7985534667969, 286.7257080078125, -418.9496765136719)
-}
-
-game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
-local args = {
-    [1] = v,
-    [2] = "RumblePower2",
-    [3] = "StopCharging",
-    [4] = Vector3.new(-83.65948486328125, 213.44522094726562, -291.4655456542969),
-    [5] = workspace.Enemies:FindFirstChild("Lv1 Crab").WeldToHead,
-    [6] = -34565654676,
-    [7] = Vector3.new(-133.71865844726562, 287.35345458984375, -305.7195739746094)
-}
-
-game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
-local args = {
-    [1] = v,
-    [2] = "RumblePower2",
-    [3] = "StopCharging",
-    [4] = Vector3.new(77.13668823242188, 226.9657745361328, -249.49107360839844),
-    [5] = workspace.Enemies:FindFirstChild("Lv2 Angry Bob").Torso,
-    [6] = -34565654676,
-    [7] = Vector3.new(29.93370819091797, 286.34930419921875, -253.6493682861328)
-}
-
-game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
-local args = {
-    [1] = v,
-    [2] = "RumblePower2",
-    [3] = "StopCharging",
-    [4] = Vector3.new(63.3048095703125, 224.93702697753906, -25.070024490356445),
-    [5] = workspace.Enemies:FindFirstChild("Lv4 Boar").WeldToHead,
-    [6] = -34565654676,
-    [7] = Vector3.new(19.479286193847656, 286.9876403808594, -52.77499771118164)
-}
-
-game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
-local args = {
-    [1] = v,
-    [2] = "RumblePower2",
-    [3] = "StopCharging",
-    [4] = Vector3.new(218.343994140625, 217.15525817871094, 4.570817470550537),
-    [5] = workspace.Enemies:FindFirstChild("Lv9 Bandit").Head,
-    [6] = -34565654676,
-    [7] = Vector3.new(176.2536163330078, 286.9888610839844, -21.108423233032227)
-}
-
-game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
-local args = {
-    [1] = v,
-    [2] = "RumblePower2",
-    [3] = "StopCharging",
-    [4] = Vector3.new(93.56257629394531, 301.9961853027344, -946.0799560546875),
-    [5] = workspace.Enemies:FindFirstChild("Lv14 Bandit").Head,
-    [6] = -34565654676,
-    [7] = Vector3.new(99.91559600830078, 405.07989501953125, -922.96533203125)
-}
-
-game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
-local args = {
-    [1] = v,
-    [2] = "RumblePower2",
-    [3] = "StopCharging",
-    [4] = Vector3.new(83.70481872558594, 301.9862365722656, -941.9555053710938),
-    [5] = workspace.Enemies:FindFirstChild("Lv14 Bandit").Head,
-    [6] = -34565654676,
-    [7] = Vector3.new(96.6998062133789, 405.1782531738281, -921.5833129882812)
-}
-
-game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
-local args = {
-    [1] = v,
-    [2] = "RumblePower2",
-    [3] = "StopCharging",
-    [4] = Vector3.new(97.21980285644531, 301.99346923828125, -927.1604614257812),
-    [5] = workspace.Enemies:FindFirstChild("Lv15 Bandit").Head,
-    [6] = -34565654676,
-    [7] = Vector3.new(99.79881286621094, 405.5469665527344, -923.1846313476562)
-}
-
-game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
-local args = {
-    [1] = v,
-    [2] = "RumblePower2",
-    [3] = "StopCharging",
-    [4] = Vector3.new(67.49362182617188, 218.64552307128906, -924.2291259765625),
-    [5] = workspace.Enemies:FindFirstChild("Lv40 Cave Demon").Head,
-    [6] = -34565654676,
-    [7] = Vector3.new(6.388354778289795, 229.92758178710938, -877.3827514648438)
-}
-
-game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
-local args = {
-    [1] = v,
-    [2] = "RumblePower2",
-    [3] = "StopCharging",
-    [4] = Vector3.new(-1037.349365234375, 218.9974822998047, 1508.9293212890625),
-    [5] = workspace.Enemies:FindFirstChild("Lv20 Gunslinger").Head,
-    [6] = -34565654676,
-    [7] = Vector3.new(-912.934326171875, 378.9986267089844, 1498.289794921875)
-}
-
-game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
-local args = {
-    [1] = v,
-    [2] = "RumblePower2",
-    [3] = "StopCharging",
-    [4] = Vector3.new(-907.0684204101562, 217.15115356445312, 1623.89892578125),
-    [5] = workspace.Enemies:FindFirstChild("Lv36 Gunslinger").Clothing_Torso,
-    [6] = -34565654676,
-    [7] = Vector3.new(-909.9625854492188, 378.9949951171875, 1500.9591064453125)
+    [4] = game.workspace.Enemies["Lv5 Crab"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
 wait(0.1)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1207, 217, -264)
+wait(0.1)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower4",
     [3] = "StopCharging",
-    [4] = Vector3.new(-989.214111328125, 287.3457336425781, 1606.9571533203125),
-    [5] = workspace.Enemies:FindFirstChild("Lv24 Gunslinger").Head,
-    [6] = -34565654676,
-    [7] = Vector3.new(-913.3990478515625, 378.7505187988281, 1499.7247314453125)
+    [4] = game.workspace.Enemies["Lv5 Crab"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
+wait(0.4)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "RumblePower3",
+    [3] = "StopCharging",
+    [4] = game.workspace.Enemies["Lv219 Cave Demon"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "RumblePower3",
+    [3] = "StopCharging",
+    [4] = game.workspace.Enemies["Lv186 Cave Demon"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "RumblePower3",
+    [3] = "StopCharging",
+    [4] = game.workspace.Enemies["Lv188 Cave Demon"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
+wait(0.1)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "RumblePower4",
+    [3] = "StopCharging",
+    [4] = game.workspace.Enemies["Lv188 Cave Demon"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "RumblePower3",
+    [3] = "StopCharging",
+    [4] = game.workspace.Enemies["Lv198 Cave Demon"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Workspace.Enemies["Lv24 Fred"].Torso.Position)
+wait(0.1)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "RumblePower3",
+    [3] = "StopCharging",
+    [4] = game.workspace.Enemies["Lv24 Fred"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "RumblePower3",
+    [3] = "StopCharging",
+    [4] = game.workspace.Enemies["Lv32 Fredric"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "RumblePower3",
+    [3] = "StopCharging",
+    [4] = game.workspace.Enemies["Lv34 Freddi"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "RumblePower3",
+    [3] = "StopCharging",
+    [4] = game.workspace.Enemies["Lv28 Friedrich"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "RumblePower3",
+    [3] = "StopCharging",
+    [4] = game.workspace.Enemies["Lv28 Fredde"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "RumblePower3",
+    [3] = "StopCharging",
+    [4] = game.workspace.Enemies["Lv29 Frued"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "RumblePower3",
+    [3] = "StopCharging",
+    [4] = game.workspace.Enemies["Lv28 Freyd"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
 wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1008, 222, 3340)
+wait(0.3)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower3",
     [3] = "StopCharging",
-    [4] = Vector3.new(-979.8124389648438, 284.4980163574219, 1613.10302734375),
-    [5] = workspace.Enemies:FindFirstChild("Lv42 Gunslinger").Head,
-    [6] = -34565654676,
-    [7] = Vector3.new(-913.4768676757812, 379.0052490234375, 1500.050537109375)
+    [4] = game.workspace.Enemies["Lv29 Angry Bobber"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1008, 222, 3340)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower3",
     [3] = "StopCharging",
-    [4] = Vector3.new(-1013.3738403320312, 325.4232177734375, 1688.3892822265625),
-    [5] = workspace.Enemies:FindFirstChild("Lv50 Gunslinger").Clothing_Torso,
-    [6] = -34565654676,
-    [7] = Vector3.new(-910.8233032226562, 378.60784912109375, 1569.9114990234375)
+    [4] = game.workspace.Enemies["Lv24 Angry Bobbi"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1008, 222, 3340)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower3",
     [3] = "StopCharging",
-    [4] = Vector3.new(-1632.6077880859375, 222.25674438476562, -171.7825164794922),
-    [5] = workspace.Enemies:FindFirstChild("Lv11 Boar").WeldToHead,
-    [6] = -34565654676,
-    [7] = Vector3.new(-1664.6160888671875, 333.8092041015625, -224.03329467773438)
+    [4] = game.workspace.Enemies["Lv35 Angry Bobb"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1008, 222, 3340)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower3",
     [3] = "StopCharging",
-    [4] = Vector3.new(-1751.0625, 226.2161407470703, -136.2944793701172),
-    [5] = workspace.Enemies:FindFirstChild("Lv16 Boar").WeldToHead,
-    [6] = -34565654676,
-    [7] = Vector3.new(-1682.8179931640625, 333.5503845214844, -218.98191833496094)
+    [4] = game.workspace.Enemies["Lv22 Angry Bobby"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-925, 217, 1667)
+wait(0.4)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower3",
     [3] = "StopCharging",
-    [4] = Vector3.new(-1898.80859375, 225.87158203125, -199.82315063476562),
-    [5] = workspace.Enemies:FindFirstChild("Lv15 Boar").WeldToHead,
-    [6] = -34565654676,
-    [7] = Vector3.new(-1721.405029296875, 334.1427307128906, -249.38113403320312)
+    [4] = game.workspace.Enemies["Lv36 Gunslinger"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower3",
     [3] = "StopCharging",
-    [4] = Vector3.new(-1931.9769287109375, 226.30117797851562, -287.95074462890625),
-    [5] = workspace.Enemies:FindFirstChild("Lv12 Boar").WeldToHead,
-    [6] = -34565654676,
-    [7] = Vector3.new(-1749.491943359375, 333.8146667480469, -255.146240234375)
+    [4] = game.workspace.Enemies["Lv42 Gunslinger"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower3",
     [3] = "StopCharging",
-    [4] = Vector3.new(-1853.822265625, 225.39382934570312, -450.7416687011719),
-    [5] = workspace.Enemies:FindFirstChild("Lv14 Boar").WeldToHead,
-    [6] = -34565654676,
-    [7] = Vector3.new(-1755.45263671875, 334.2327880859375, -290.3946228027344)
+    [4] = game.workspace.Enemies["Lv24 Gunslinger"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower3",
     [3] = "StopCharging",
-    [4] = Vector3.new(-1840.678466796875, 225.32420349121094, -438.4315185546875),
-    [5] = workspace.Enemies:FindFirstChild("Lv11 Boar").WeldToHead,
-    [6] = -34565654676,
-    [7] = Vector3.new(-1758.01171875, 334.2291259765625, -288.9058837890625)
+    [4] = game.workspace.Enemies["Lv50 Gunslinger"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower3",
     [3] = "StopCharging",
-    [4] = Vector3.new(-1171.2266845703125, 224.90440368652344, -1589.7099609375),
-    [5] = workspace.Enemies:FindFirstChild("Lv24 Thug").Head,
-    [6] = -34565654676,
-    [7] = Vector3.new(-1219.8101806640625, 348.6423645019531, -1570.0311279296875)
+    [4] = game.workspace.Enemies["Lv20 Gunslinger"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+local plrid = tostring(game.Players.LocalPlayer.UserId)
+workspace.UserData["User_"..plrid].III:FireServer("On",1)
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower3",
     [3] = "StopCharging",
-    [4] = Vector3.new(-1171.41357421875, 224.90525817871094, -1577.9959716796875),
-    [5] = workspace.Enemies:FindFirstChild("Lv24 Thug").Head,
-    [6] = -34565654676,
-    [7] = Vector3.new(-1220.6502685546875, 348.3937683105469, -1572.6290283203125)
+    [4] = game.workspace.Enemies["Lv500 Bucky"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower3",
     [3] = "StopCharging",
-    [4] = Vector3.new(-1161.415283203125, 224.90011596679688, -1583.4256591796875),
-    [5] = workspace.Enemies:FindFirstChild("Lv23 Thug").Head,
-    [6] = -34565654676,
-    [7] = Vector3.new(-1219.9736328125, 348.6428527832031, -1569.7783203125)
+    [4] = game.workspace.Enemies["Lv360 Bruno"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower3",
     [3] = "StopCharging",
-    [4] = Vector3.new(-1201.728271484375, 255.42002868652344, -1661.92626953125),
-    [5] = workspace.Enemies:FindFirstChild("Lv40 Thug").Head,
-    [6] = -34565654676,
-    [7] = Vector3.new(-1212.4869384765625, 348.72052001953125, -1636.4603271484375)
+    [4] = game.workspace.Enemies["Lv440 Buster"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower3",
     [3] = "StopCharging",
-    [4] = Vector3.new(-1286.4278564453125, 250.79481506347656, -1653.7073974609375),
-    [5] = workspace.Enemies:FindFirstChild("Lv22 Thug").Head,
-    [6] = -34565654676,
-    [7] = Vector3.new(-1212.593017578125, 349.0060729980469, -1636.483642578125)
+    [4] = game.workspace.Enemies["Lv8000 Gunner Captain"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1625, 217, -295)
+wait(0.1)
+local plrid = tostring(game.Players.LocalPlayer.UserId)
+workspace.UserData["User_"..plrid].III:FireServer("Off",1)
+wait(0.3)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower3",
     [3] = "StopCharging",
-    [4] = Vector3.new(-1335.3121337890625, 249.4559326171875, -1625.5478515625),
-    [5] = workspace.Enemies:FindFirstChild("Lv30 Thug").Torso,
-    [6] = -34565654676,
-    [7] = Vector3.new(-1273.34912109375, 348.04705810546875, -1603.197021484375)
+    [4] = game.workspace.Enemies["Lv11 Boar"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower3",
     [3] = "StopCharging",
-    [4] = Vector3.new(-1344.78466796875, 250.7982940673828, -1629.9471435546875),
-    [5] = workspace.Enemies:FindFirstChild("Lv24 Thug").Head,
-    [6] = -34565654676,
-    [7] = Vector3.new(-1274.81298828125, 348.3891906738281, -1600.554931640625)
+    [4] = game.workspace.Enemies["Lv16 Boar"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower3",
     [3] = "StopCharging",
-    [4] = Vector3.new(-1432.47265625, 258.8237609863281, -1652.3255615234375),
-    [5] = workspace.Enemies:FindFirstChild("Lv17 Thug").Head,
-    [6] = -34565654676,
-    [7] = Vector3.new(-1353.7430419921875, 348.3849792480469, -1593.915283203125)
+    [4] = game.workspace.Enemies["Lv15 Boar"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower3",
     [3] = "StopCharging",
-    [4] = Vector3.new(-1278.3076171875, 266.35296630859375, -1786.2957763671875),
-    [5] = workspace.Enemies:FindFirstChild("Lv17 Thug").Torso,
-    [6] = -34565654676,
-    [7] = Vector3.new(-1283.3463134765625, 348.26861572265625, -1703.475341796875)
+    [4] = game.workspace.Enemies["Lv12 Boar"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower3",
     [3] = "StopCharging",
-    [4] = Vector3.new(-1278.3076171875, 266.35296630859375, -1786.2957763671875),
-    [5] = workspace.Enemies:FindFirstChild("Lv17 Thug").Torso,
-    [6] = -34565654676,
-    [7] = Vector3.new(-1283.3463134765625, 348.26861572265625, -1703.475341796875)
+    [4] = game.workspace.Enemies["Lv14 Boar"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+wait(0.1)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower5",
     [3] = "StopCharging",
-    [4] = Vector3.new(1132.2120361328125, 225.96641540527344, -3277.185546875),
-    [5] = workspace.Enemies:FindFirstChild("Lv24 Fred").Head,
-    [6] = -34565654676,
-    [7] = Vector3.new(1066.843017578125, 388.1502990722656, -3306.836669921875)
+    [4] = game.workspace.Enemies["Lv14 Boar"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+wait(0.4)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower3",
     [3] = "StopCharging",
-    [4] = Vector3.new(1137.151123046875, 224.97061157226562, -3283.807373046875),
-    [5] = workspace.Enemies:FindFirstChild("Lv32 Fredric"):FindFirstChild("Right Arm"),
-    [6] = -34565654676,
-    [7] = Vector3.new(1065.7066650390625, 387.4869079589844, -3304.2236328125)
+    [4] = game.workspace.Enemies["Lv24 Thug"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower3",
     [3] = "StopCharging",
-    [4] = Vector3.new(1002.73583984375, 222.06488037109375, -3276.591796875),
-    [5] = workspace.Enemies:FindFirstChild("Lv29 Frued"):FindFirstChild("Right Leg"),
-    [6] = -34565654676,
-    [7] = Vector3.new(1064.3001708984375, 387.4046325683594, -3304.138916015625)
+    [4] = game.workspace.Enemies["Lv23 Thug"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+wait(0.1)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower4",
     [3] = "StopCharging",
-    [4] = Vector3.new(997.2695922851562, 224.61802673339844, -3270.251708984375),
-    [5] = workspace.Enemies:FindFirstChild("Lv28 Freyd").Torso,
-    [6] = -34565654676,
-    [7] = Vector3.new(1063.2073974609375, 387.0899353027344, -3306.88525390625)
+    [4] = game.workspace.Enemies["Lv23 Thug"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+wait(0.4)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower3",
     [3] = "StopCharging",
-    [4] = Vector3.new(1117.6016845703125, 224.42991638183594, -3374.197021484375),
-    [5] = workspace.Enemies:FindFirstChild("Lv34 Freddi").HumanoidRootPart,
-    [6] = -34565654676,
-    [7] = Vector3.new(1064.3197021484375, 387.072021484375, -3307.82275390625)
+    [4] = game.workspace.Enemies["Lv40 Thug"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower3",
     [3] = "StopCharging",
-    [4] = Vector3.new(1073.0994873046875, 225.99644470214844, -3393.03271484375),
-    [5] = workspace.Enemies:FindFirstChild("Lv28 Friedrich").Head,
-    [6] = -34565654676,
-    [7] = Vector3.new(1066.481201171875, 387.5010986328125, -3307.27392578125)
+    [4] = game.workspace.Enemies["Lv22 Thug"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower3",
     [3] = "StopCharging",
-    [4] = Vector3.new(1065.8690185546875, 225.96688842773438, -3395.633544921875),
-    [5] = workspace.Enemies:FindFirstChild("Lv28 Fredde").Head,
-    [6] = -34565654676,
-    [7] = Vector3.new(1063.366455078125, 387.1663513183594, -3307.214111328125)
+    [4] = game.workspace.Enemies["Lv30 Thug"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+wait(0.1)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower4",
     [3] = "StopCharging",
-    [4] = Vector3.new(1153.5784912109375, 221.6549530029297, -273.46978759765625),
-    [5] = workspace.Enemies:FindFirstChild("Lv4 Crab").HumanoidRootPart,
-    [6] = -34565654676,
-    [7] = Vector3.new(1192.8223876953125, 381.3236999511719, -279.0852355957031)
+    [4] = game.workspace.Enemies["Lv23 Thug"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+wait(0.4)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower3",
     [3] = "StopCharging",
-    [4] = Vector3.new(1158.1474609375, 216.27139282226562, -246.5531463623047),
-    [5] = workspace.Enemies:FindFirstChild("Lv3 Crab").Head,
-    [6] = -34565654676,
-    [7] = Vector3.new(1194.3582763671875, 381.1829528808594, -276.0736999511719)
+    [4] = game.workspace.Enemies["Lv17 Thug"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower3",
     [3] = "StopCharging",
-    [4] = Vector3.new(1188.7122802734375, 216.16050720214844, -238.13357543945312),
-    [5] = workspace.Enemies:FindFirstChild("Lv4 Crab").Head,
-    [6] = -34565654676,
-    [7] = Vector3.new(1192.25439453125, 381.74920654296875, -276.58135986328125)
+    [4] = game.workspace.Enemies["Lv15 Thug"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Rumble);
-local v = IntVariable.VTC;
+wait(0.1)
+wait(0.5)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "RumblePower2",
+    [2] = "RumblePower4",
     [3] = "StopCharging",
-    [4] = Vector3.new(1217.0791015625, 225.1734619140625, -237.17050170898438),
-    [5] = workspace.Enemies:FindFirstChild("Lv5 Crab").Head,
-    [6] = -34565654676,
-    [7] = Vector3.new(1195.8756103515625, 381.7571105957031, -277.2898864746094)
+    [4] = game.workspace.Enemies["Lv23 Thug"].HumanoidRootPart.CFrame,
+    [5] = workspace.IslandWindmill.Beach.Beach,
+    [6] = 100
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(unpack(args))
-wait(0.2)
 end)
 end
 	else
