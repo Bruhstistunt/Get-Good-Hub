@@ -5089,6 +5089,98 @@ local plr = game.Players.LocalPlayer
 tpservice:Teleport(game.PlaceId, plr)
 end)
 
+DrinksSection:NewToggle("Light Lag Server", "Needed For Duping", function(state)
+    if state then
+            _G.ez = true
+while _G.ez do
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
+
+local Lp = game:GetService("Players").LocalPlayer
+local DevilFruit = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit
+
+if DevilFruit.Value == "Light" then
+_G.HarveyTrash = "VTCrv"
+end
+
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "LightPower2",
+    [3] = "StartCharging",
+    [4] = CFrame.new(786.0486450195312, -714.13134765625, -9685.927734375) * CFrame.Angles(-0.26639312505722046, -0.08931299299001694, -0.024334438145160675),
+    [6] = Left
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireServer(unpack(args))
+
+local safezonedestroyspace =  game:GetService("Workspace"):FindFirstChild("SafeZoneOuterSpacePart")  
+    if safezonedestroyspace then 
+    safezonedestroyspace:Destroy() 
+    end 
+   
+   local SafeZoneOuterSpace = Instance.new("Part",game.Workspace)
+    SafeZoneOuterSpace.Name = "SafeZoneOuterSpacePart"
+    SafeZoneOuterSpace.Size = Vector3.new(2,2,2)
+    SafeZoneOuterSpace.Position =Vector3.new(-105, 1899, -89)
+    SafeZoneOuterSpace.Anchored = true
+
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "LightPower2",
+    [3] = "StopCharging",
+    [4] = CFrame.new(-250.41246032714844, 272, 345.6487121582031) * CFrame.Angles(-1.8288825750350952, 0.08827050030231476, 2.8192803859710693),
+    [5] = workspace.IslandWindmill.OutterDune.Beach,
+    [6] = 100
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireServer(unpack(args))
+wait(0.1)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "LightPower2",
+    [3] = "StopCharging",
+    [4] = CFrame.new(80.79541778564453, 299.42132568359375, -942.3551635742188) * CFrame.Angles(-1.0790228843688965, -0.09837599843740463, -0.18134060502052307),
+    [5] = workspace.Enemies:FindFirstChild("Lv14 Bandit"):FindFirstChild("Right Arm"),
+    [6] = 100
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireServer(unpack(args))
+wait(0.1)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "LightPower2",
+    [3] = "StopCharging",
+    [4] = CFrame.new(5916.82958984375, -5992.55859375, -1072.6920166015625) * CFrame.Angles(-1.4467071294784546, -0.6474810242652893, -1.366882562637329),
+    [6] = 100
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireServer(unpack(args))
+wait(0.1)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "LightPower2",
+    [3] = "StopCharging",
+    [4] = CFrame.new(-4584.98779296875, -4601.07421875, -6191.19091796875) * CFrame.Angles(-0.8165116906166077, 0.4650050103664398, 0.4452721178531647),
+    [6] = 100
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireServer(unpack(args))
+end
+    else
+        _G.ez = false
+    end
+end)
+
 DrinksSection:NewToggle("Auto Drop", "ez", function(state)
     if state then
             _G.Spawn = true
