@@ -4367,8 +4367,9 @@ end)
 PeopleSection:NewButton("Light Kill Target", "ez", function()
 local Lp = game:GetService("Players").LocalPlayer
 local DevilFruit = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit
+local DevilFruit2 = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit2
 
-if DevilFruit.Value == "Light" then
+if DevilFruit.Value == "Light" or DevilFruit2.Value == "Light"then
 _G.HarveyTrash = "VTCrv"
 end
 
@@ -4388,8 +4389,9 @@ PeopleSection:NewButton("Quake Kill Target", "ez", function()
 local Players = game:GetService("Players")
 local Lp = Players.LocalPlayer
 local DevilFruit = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit
+local DevilFruit2 = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit2
 
-if DevilFruit.Value == "Quake" then
+if DevilFruit.Value == "Quake" or DevilFruit2.Value == "Quake" then
 _G.HarveyTrash = "VTCebvc"
 end
 
@@ -4412,8 +4414,9 @@ PeopleSection:NewButton("Vampire Kill Target", "ez", function()
 local Players = game:GetService("Players")
 local Lp = Players.LocalPlayer
 local DevilFruit = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit
+local DevilFruit2 = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit2
 
-if DevilFruit.Value == "Vampire" then
+if DevilFruit.Value == "Vampire" or DevilFruit2.Value == "Vampire" then
 _G.HarveyTrash = "VTCjwf"
 end
 
@@ -4433,9 +4436,10 @@ PeopleSection:NewButton("Rumble Kill Target", "ez", function()
 local Players = game:GetService("Players")
 local Lp = Players.LocalPlayer
 local DevilFruit = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit
+local DevilFruit2 = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit2
 
-if DevilFruit.Value == "Vampire" then
-_G.HarveyTrash = "VTCjwf"
+if DevilFruit.Value == "Rumble" or DevilFruit2.Value == "Rumble" then
+_G.HarveyTrash = "VTCzyhf"
 end
 
 local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Rumble);
@@ -4443,7 +4447,7 @@ local v = IntVariable["".._G.HarveyTrash]
 repeat wait()
 spawn(function()
 if game:GetService("Workspace")["".._G.Guy].DamageScript.Enabled == true then
-game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(v,"RumblePower3","StopCharging",game.workspace["".._G.Guy].HumanoidRootPart.CFrame,game.workspace["".._G.Guy].HumanoidRootPart,"500")
+game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireServer(v,"RumblePower3","StopCharging",game.workspace["".._G.Guy].HumanoidRootPart.CFrame,game.workspace["".._G.Guy].HumanoidRootPart,100)
 end
 end)
 until _G.idk == true
@@ -4454,8 +4458,9 @@ local Sex = (txt)
 local Players = game:GetService("Players")
 local Lp = Players.LocalPlayer
 local DevilFruit = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit
+local DevilFruit2 = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit2
 
-if DevilFruit.Value == "String" then
+if DevilFruit.Value == "String" or DevilFruit2.Value == "String" then
 _G.HarveyTrash = "VTCjwbvx"
 end
 
@@ -4479,8 +4484,9 @@ wait(10)
 local Players = game:GetService("Players")
 local Lp = Players.LocalPlayer
 local DevilFruit = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit
+local DevilFruit2 = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit2
 
-if DevilFruit.Value == "String" then
+if DevilFruit.Value == "String" or DevilFruit2.Value == "String" then
 _G.HarveyTrash = "VTCjwbvx"
 end
 
