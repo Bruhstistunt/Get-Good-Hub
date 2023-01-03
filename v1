@@ -5115,7 +5115,7 @@ DrinksSection:NewToggle("Light Lag Server", "Needed For Duping", function(state)
     if state then
             _G.ez = true
 while _G.ez do
-wait(0)
+wait()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
 
 local Lp = game:GetService("Players").LocalPlayer
@@ -5160,7 +5160,7 @@ local args = {
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireServer(unpack(args))
-wait(0)
+wait()
 local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
 local v = IntVariable["".._G.HarveyTrash]
 local args = {
@@ -5173,7 +5173,7 @@ local args = {
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireServer(unpack(args))
-wait(0.1)
+wait()
 local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
 local v = IntVariable["".._G.HarveyTrash]
 local args = {
@@ -5185,7 +5185,7 @@ local args = {
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireServer(unpack(args))
-wait(0)
+wait()
 local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
 local v = IntVariable["".._G.HarveyTrash]
 local args = {
