@@ -5225,7 +5225,7 @@ if DevilFruit.Value == "Quake" or DevilFruit2.Value == "Quake" then
 _G.HarveyTrash = "VTCebvc"
 end
 
-wait(0.1)
+wait(0.3)
 local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
 local v = IntVariable["".._G.HarveyTrash]
 local args = {
@@ -5239,7 +5239,7 @@ local args = {
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
-wait(0.1)
+wait(0.3)
 local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
 local v = IntVariable["".._G.HarveyTrash]
 local args = {
@@ -5253,7 +5253,7 @@ local args = {
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
-wait(0.1)
+wait(0.3)
 local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
 local v = IntVariable["".._G.HarveyTrash]
 local args = {
