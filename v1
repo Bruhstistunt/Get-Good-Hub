@@ -5211,6 +5211,68 @@ end
     end
 end)
 
+DrinksSection:NewToggle("Quake Lag Server", "Needed For Duping", function(state)
+    if state then
+            _G.ez = true
+while _G.ez do
+wait(0.1)
+local Players = game:GetService("Players")
+local Lp = Players.LocalPlayer
+local DevilFruit = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit
+local DevilFruit2 = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit2
+
+if DevilFruit.Value == "Quake" or DevilFruit2.Value == "Quake" then
+_G.HarveyTrash = "VTCebvc"
+end
+
+wait(0.1)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "QuakePower10",
+    [3] = "StopCharging",
+    [4] = workspace.IslandWindmill.OutterDune.Beach,
+    [5] = CFrame.new(-209.28482055664062, 271, 354.75537109375) * CFrame.Angles(-3.005420207977295, -0.024599527940154076, -3.1382224559783936),
+    [6] = 100,
+    [7] = Vector3.new(-216.01699829101562, 224.08868408203125, -8.245464324951172)
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
+wait(0.1)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "QuakePower10",
+    [3] = "StopCharging",
+    [4] = workspace.IslandWindmill.OutterDune.Beach,
+    [5] = CFrame.new(-290.52935791015625, 271, 349.93731689453125) * CFrame.Angles(-3.0045297145843506, 0.08520114421844482, 3.1298558712005615),
+    [6] = 100,
+    [7] = Vector3.new(-220.2255096435547, 223.7602996826172, -8.670133590698242)
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
+wait(0.1)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "QuakePower10",
+    [3] = "StopCharging",
+    [4] = workspace.Cave.Stone,
+    [5] = CFrame.new(87.96835327148438, 297, -939.450439453125) * CFrame.Angles(-1.6334294080734253, 0.8766965866088867, 1.6522094011306763),
+    [6] = 100,
+    [7] = Vector3.new(241.59860229492188, 242.6193084716797, -920.0115966796875)
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
+end
+    else
+        _G.ez = false
+    end
+end)
+
 DrinksSection:NewToggle("Auto Drop", "ez", function(state)
     if state then
             _G.Spawn = true
