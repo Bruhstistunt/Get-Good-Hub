@@ -5104,7 +5104,7 @@ local args = {
 }
 
 workspace.Merchants.QuestMerchant.Clickable.Retum:FireServer(unpack(args))
-wait(0.13)
+wait(0.15)
 local tpservice= game:GetService("TeleportService") -- auto leave
 local plr = game.Players.LocalPlayer
 
