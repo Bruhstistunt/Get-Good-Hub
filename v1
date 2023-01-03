@@ -3088,10 +3088,18 @@ FruitFarmSection:NewToggle("Quake AutoFarm", "didnt test yet", function(state)
     if state then
             _G.Spawn = true
 while _G.Spawn do
+local Players = game:GetService("Players")
+local Lp = Players.LocalPlayer
+local DevilFruit = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit
+local DevilFruit2 = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit2
+
+if DevilFruit.Value == "Quake" or DevilFruit2.Value == "Quake" then
+_G.HarveyTrash = "VTCebvc"
+end
+
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3104,9 +3112,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3119,9 +3126,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3134,9 +3140,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3149,9 +3154,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3164,9 +3168,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3179,9 +3182,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3194,9 +3196,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3209,9 +3210,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3224,9 +3224,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3239,9 +3238,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3254,9 +3252,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3268,9 +3265,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3283,9 +3279,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3298,9 +3293,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3313,9 +3307,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3328,9 +3321,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3343,9 +3335,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3358,9 +3349,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3373,9 +3363,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3388,9 +3377,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3403,9 +3391,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3418,9 +3405,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
@@ -3433,9 +3419,8 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 wait(0.5)
-local user = tostring(game.Players.LocalPlayer.Name);
-local IntVariable  = getsenv(game:GetService("Workspace")[""..user].Powers.Quake);
-local v = IntVariable.VTC;
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Quake);
+local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
     [2] = "QuakePower3",
