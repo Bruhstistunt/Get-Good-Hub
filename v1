@@ -151,8 +151,8 @@ end)
 
 SamSection:NewToggle("Auto Sam ", "ez pz", function(state)
     if state then
-            _G.Spawn = true
-while _G.Spawn do
+            _G.Spawn1 = true
+while _G.Spawn1 do
     wait(0.2)
     spawn(function()
 wait(0.1)
@@ -191,7 +191,7 @@ end
 end)
 end
     else
-        _G.Spawn = false
+        _G.Spawn1 = false
     end
 end)
 
@@ -250,8 +250,8 @@ end)
 
 SamSection:NewToggle("Auto Tp Fruit's", "ez", function(state)
 	if state then
-			_G.Spawn = true
-while _G.Spawn do
+			_G.Spawn2 = true
+while _G.Spawn2 do
 wait()
 for i,v in next, game.Workspace.Trees:GetDescendants() do
  if v:IsA('ClickDetector') then
@@ -260,7 +260,7 @@ for i,v in next, game.Workspace.Trees:GetDescendants() do
 end
 end
 	else
-		_G.Spawn = false
+		_G.Spawn2 = false
 	end
 end)
 
@@ -268,8 +268,8 @@ end)
 -- Mixer Section --
 MixerSection:NewToggle("Mixer", "ez", function(state)
     if state then
-            _G.Spawn = true
-while _G.Spawn do
+            _G.Spawn3 = true
+while _G.Spawn3 do
     wait(0)
     pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-204, 229, -210)
@@ -1103,7 +1103,7 @@ wait(10)
 end)
 end
     else
-        _G.Spawn = false
+        _G.Spawn3 = false
     end
 end)
 
@@ -1321,8 +1321,8 @@ end)
 
 AutoFarmAltsSection:NewToggle("Auto Weapons Remote", "needed for better experience of autofarms", function(state)
     if state then
-            _G.Spawn = true
-while _G.Spawn do
+            _G.Spawn5 = true
+while _G.Spawn5 do
        wait(1)     
     spawn(function()
 if game.Players.LocalPlayer.Character.Humanoid.Health == 100 then
@@ -1331,14 +1331,14 @@ end
 end)
 end
 	else
-		_G.Spawn = false
+		_G.Spawn5 = false
 	end
 end)
 
 AutoFarmAltsSection:NewToggle("Auto Tp 1", "it will autospawn and autokill", function(state)
     if state then
-            _G.Spawn = true
-while _G.Spawn do
+            _G.Spawn6 = true
+while _G.Spawn6 do
        wait(0.2)     
     spawn(function()  
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-91967, 14197, -170875)
@@ -1370,14 +1370,14 @@ end
 end)
 end
     else
-        _G.Spawn = false
+        _G.Spawn6 = false
     end
 end)
 
 AutoFarmAltsSection:NewToggle("Auto Tp 2", "it will autospawn and autokill", function(state)
     if state then
-            _G.Spawn = true
-while _G.Spawn do
+            _G.Spawn7 = true
+while _G.Spawn7 do
        wait(0.2)     
     spawn(function()  
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-91961, 14197, -170881)
@@ -1409,14 +1409,14 @@ end
 end)
 end
     else
-        _G.Spawn = false
+        _G.Spawn7 = false
     end
 end)
 
 AutoFarmAltsSection:NewToggle("Auto Tp 3", "it will autospawn and autokill", function(state)
     if state then
-            _G.Spawn = true
-while _G.Spawn do
+            _G.Spawn8 = true
+while _G.Spawn8 do
        wait(0.2)     
     spawn(function()  
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-91953, 14197, -170876)
@@ -1448,14 +1448,14 @@ end
 end)
 end
     else
-        _G.Spawn = false
+        _G.Spawn8 = false
     end
 end)
 
 AutoFarmAltsSection:NewToggle("Auto Tp 4", "it will autospawn and autokill", function(state)
     if state then
-            _G.Spawn = true
-while _G.Spawn do
+            _G.Spawn9 = true
+while _G.Spawn9 do
        wait(0.2)     
     spawn(function()  
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-91958, 14197, -170870)
@@ -1487,7 +1487,7 @@ end
 end)
 end
     else
-        _G.Spawn = false
+        _G.Spawn9 = false
     end
 end)
 
@@ -1581,8 +1581,8 @@ end)
 
 AutoFarmAltsSection:NewToggle("Auto Weapons Remote", "needed for better experience of autofarms", function(state)
     if state then
-            _G.Spawn = true
-while _G.Spawn do
+            _G.Spawn0 = true
+while _G.Spawn0 do
        wait(1)     
     spawn(function()
 if game.Players.LocalPlayer.Character.Humanoid.Health == 100 then
@@ -1591,7 +1591,7 @@ end
 end)
 end
 	else
-		_G.Spawn = false
+		_G.Spawn0 = false
 	end
 end)
 
@@ -1853,8 +1853,8 @@ end)
 
 AutoFarmAltsSection:NewToggle("Auto Weapons Remote", "needed for better experience of autofarms", function(state)
     if state then
-            _G.Spawn = true
-while _G.Spawn do
+            _G.Spawn11 = true
+while _G.Spawn11 do
        wait(1)     
     spawn(function()
 if game.Players.LocalPlayer.Character.Humanoid.Health == 100 then
@@ -1863,14 +1863,14 @@ end
 end)
 end
 	else
-		_G.Spawn = false
+		_G.Spawn11 = false
 	end
 end)
 
 AutoFarmAltsSection:NewToggle("Auto Tp 1", "it will autospawn and autokill", function(state)
     if state then
-            _G.Spawn = true
-while _G.Spawn do
+            _G.Spawn111 = true
+while _G.Spawn111 do
        wait(0.2)     
     spawn(function()  
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-92091, 14197, -170851)
@@ -1902,14 +1902,14 @@ end
 end)
 end
     else
-        _G.Spawn = false
+        _G.Spawn111 = false
     end
 end)
 
 AutoFarmAltsSection:NewToggle("Auto Tp 2", "it will autospawn and autokill", function(state)
     if state then
-            _G.Spawn = true
-while _G.Spawn do
+            _G.Spawn12 = true
+while _G.Spawn12 do
        wait(0.2)     
     spawn(function()  
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-92086, 14197, -170851)
@@ -1941,14 +1941,14 @@ end
 end)
 end
     else
-        _G.Spawn = false
+        _G.Spawn12 = false
     end
 end)
 
 AutoFarmAltsSection:NewToggle("Auto Tp 3", "it will autospawn and autokill", function(state)
     if state then
-            _G.Spawn = true
-while _G.Spawn do
+            _G.Spawn122 = true
+while _G.Spawn122 do
        wait(0.2)     
     spawn(function()  
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-92083, 14197, -170851)
@@ -1980,14 +1980,14 @@ end
 end)
 end
     else
-        _G.Spawn = false
+        _G.Spawn122 = false
     end
 end)
 
 AutoFarmAltsSection:NewToggle("Auto Tp 4", "it will autospawn and autokill", function(state)
     if state then
-            _G.Spawn = true
-while _G.Spawn do
+            _G.Spawn13 = true
+while _G.Spawn13 do
        wait(0.2)     
     spawn(function()  
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-92079, 14197, -170851)
@@ -2019,7 +2019,7 @@ end
 end)
 end
     else
-        _G.Spawn = false
+        _G.Spawn13 = false
     end
 end)
 
@@ -2096,57 +2096,57 @@ end)
 
 AutoFarmAltsSection:NewToggle("Auto Tp 1", "ToggleInfo", function(state)
     if state then
-            _G.Spawn = true
-while _G.Spawn do
+            _G.Spawn133 = true
+while _G.Spawn133 do
     wait(0.2)
     spawn(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-240588, 212, -26404)
 end)
 end
     else
-        _G.Spawn = false
+        _G.Spawn133 = false
     end
 end)
 
 AutoFarmAltsSection:NewToggle("Auto Tp 2", "ToggleInfo", function(state)
     if state then
-            _G.Spawn = true
-while _G.Spawn do
+            _G.Spawn123 = true
+while _G.Spawn123 do
     wait(0.2)
     spawn(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-240575, 212, -26387)
 end)
 end
     else
-        _G.Spawn = false
+        _G.Spawn123 = false
     end
 end)
 
 AutoFarmAltsSection:NewToggle("Auto Tp 3", "ToggleInfo", function(state)
     if state then
-            _G.Spawn = true
-while _G.Spawn do
+            _G.Spawn321 = true
+while _G.Spawn321 do
     wait(0.2)
     spawn(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-240565, 212, -26361)
 end)
 end
     else
-        _G.Spawn = false
+        _G.Spawn321 = false
     end
 end)
 
 AutoFarmAltsSection:NewToggle("Auto Tp 4", "ToggleInfo", function(state)
     if state then
-            _G.Spawn = true
-while _G.Spawn do
+            _G.Spawn445 = true
+while _G.Spawn445 do
     wait(0.2)
     spawn(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-240579, 212, -26332)
 end)
 end
     else
-        _G.Spawn = false
+        _G.Spawn445 = false
     end
 end)
 
@@ -2373,8 +2373,8 @@ FruitFarmSection:NewToggle("Bring Npc's", "moansss", function(mob)
 
 FruitFarmSection:NewToggle("Light AutoFarm", "minimum 1.5 sniper affy!", function(state)
     if state then
-            _G.Spawn = true
-while _G.Spawn do
+            _G.Spawn55 = true
+while _G.Spawn55 do
 pcall(function()
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-105, 1902, -89)
@@ -3087,14 +3087,14 @@ wait(0.1)
 end)
 end
     else
-        _G.Spawn = false
+        _G.Spawn55 = false
     end
 end)
 
 FruitFarmSection:NewToggle("Quake AutoFarm", "didnt test yet", function(state)
     if state then
-            _G.Spawn = true
-while _G.Spawn do
+            _G.Spawn87 = true
+while _G.Spawn87 do
 local Players = game:GetService("Players")
 local Lp = Players.LocalPlayer
 local DevilFruit = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit
@@ -3442,14 +3442,14 @@ game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireSe
 wait(7.5)
 end
 	else
-		_G.Spawn = false
+		_G.Spawn87 = false
 	end
 end)
 
 FruitFarmSection:NewToggle("Rumble Blitz AutoFarm", "ez", function(state)
 	if state then
-			_G.Spawn = true
-while _G.Spawn do
+			_G.Spawn988 = true
+while _G.Spawn988 do
 wait(0.2)
 pcall(function()
 local Lp = game:GetService("Players").LocalPlayer
@@ -4213,14 +4213,14 @@ game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireS
 end)
 end
 	else
-		_G.Spawn = false
+		_G.Spawn98 = false
 	end
 end)
 
 FruitFarmSection:NewToggle("Magma Npc's AutoFarm", "ez", function(state)
     if state then
-            _G.Spawn = true
-while _G.Spawn do
+            _G.Spawn000 = true
+while _G.Spawn000 do
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-92077, 14200, -176061)
 
 local safezonedestroyspace =  game:GetService("Workspace"):FindFirstChild("SafeZoneOuterSpacePart")  
@@ -4259,14 +4259,14 @@ local args = {
 game:GetService("Players").LocalPlayer.Character.Powers.Magma.RemoteEvent:FireServer(unpack(args))
 end
     else
-        _G.Spawn = false
+        _G.Spawn000 = false
     end
 end)
 
 FruitFarmSection:NewToggle("Magma AutoFarm Gunners", "ez", function(state)
     if state then
-            _G.Spawn = true
-while _G.Spawn do
+            _G.Spawn0000 = true
+while _G.Spawn000 do
 local plrid = tostring(game.Players.LocalPlayer.UserId)
 workspace.UserData["User_"..plrid].UpdateHaki:FireServer()
 workspace.UserData["User_"..plrid].III:FireServer("On",1)
@@ -4354,7 +4354,7 @@ workspace.UserData["User_"..plrid].III:FireServer("Off",1)
 wait(29)
 end
     else
-        _G.Spawn = false
+        _G.Spawn0000 = false
     end
 end)
 -- People Section --
@@ -4472,8 +4472,8 @@ end)
 
 PeopleSection:NewToggle("String Auto Remove", "ez", function(state)
     if state then
-            _G.Spawn = true
-while _G.Spawn do
+            _G.Spawn654 = true
+while _G.Spawn654 do
 wait(10)
 local Players = game:GetService("Players")
 local Lp = Players.LocalPlayer
@@ -4494,7 +4494,7 @@ local args = {
 game:GetService("Players").LocalPlayer.Character.Powers.String.RemoteEvent:FireServer(unpack(args))
 end
 	else
-		_G.Spawn = false
+		_G.Spawn654 = false
 	end
 end)
 
@@ -4706,8 +4706,8 @@ end)
 
 HakiSection:NewToggle("Auto Buso", "ez", function(state)
     if state then
-            _G.Spawn = true
-while _G.Spawn do
+            _G.Spawn1111 = true
+while _G.Spawn1111 do
     wait(0)
     pcall(function()
 local plrid = tostring(game.Players.LocalPlayer.UserId)
@@ -5066,7 +5066,7 @@ end
 end)
 end
     else
-        _G.Spawn = false
+        _G.Spawn1111 = false
     end
 end)
 
@@ -5205,8 +5205,8 @@ end)
 
 DrinksSection:NewToggle("Quake Lag Server", "Needed For Duping", function(state)
     if state then
-            _G.ez = true
-while _G.ez do
+            _G.ez1 = true
+while _G.ez1 do
 wait(0.1)
 local Players = game:GetService("Players")
 local Lp = Players.LocalPlayer
@@ -5261,14 +5261,14 @@ local args = {
 game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(unpack(args))
 end
     else
-        _G.ez = false
+        _G.ez1 = false
     end
 end)
 
 DrinksSection:NewToggle("Auto Drop", "ez", function(state)
     if state then
-            _G.Spawn = true
-while _G.Spawn do
+            _G.Spawn6666 = true
+while _G.Spawn6666 do
 wait()
 local plr = game.Players.LocalPlayer
 local char = plr.Character
@@ -5279,7 +5279,7 @@ v.Parent = workspace
 end
 end
     else
-        _G.Spawn = false
+        _G.Spawn6666 = false
     end
 end)
 	end
