@@ -4213,7 +4213,7 @@ game:GetService("Players").LocalPlayer.Character.Powers.Rumble.RemoteEvent:FireS
 end)
 end
 	else
-		_G.Spawn98 = false
+		_G.Spawn988 = false
 	end
 end)
 
