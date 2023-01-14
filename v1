@@ -4357,6 +4357,34 @@ end
         _G.Spawn0000 = false
     end
 end)
+
+PeopleSection:NewButton("Light Kill Target (test)", "ez", function()
+local Lp = game:GetService("Players").LocalPlayer
+local DevilFruit = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit
+local DevilFruit2 = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit2
+
+if DevilFruit.Value == "Light" or DevilFruit2.Value == "Light"then
+_G.HarveyTrash = "VTCrv"
+end
+
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local v = IntVariable["".._G.HarveyTrash]
+
+repeat wait()
+spawn(function()
+if game:GetService("Workspace")["".._G.Guy].DamageScript.Enabled == true then
+local plr1 = game.Players.LocalPlayer.Character
+local plr2 = game.Workspace:FindFirstChild(_G.Guy)
+plr1.HumanoidRootPart.CFrame = plr2.HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+
+game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireServer(v,"LightPower2","StartCharging",game.workspace["".._G.Guy].HumanoidRootPart.CFrame,game.workspace["".._G.Guy].HumanoidRootPart,Left);
+
+game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireServer(v,"LightPower2","StopCharging",game.workspace["".._G.Guy].HumanoidRootPart.CFrame,game.workspace["".._G.Guy].HumanoidRootPart,100)
+end
+end)
+until _G.idk == true
+end)
+
 -- People Section --
 PeopleSection:NewButton("Light Kill Target", "ez", function()
 local Lp = game:GetService("Players").LocalPlayer
