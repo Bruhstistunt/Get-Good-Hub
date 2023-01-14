@@ -4376,7 +4376,7 @@ spawn(function()
 if game:GetService("Workspace")["".._G.Guy].DamageScript.Enabled == true then
 local plr1 = game.Players.LocalPlayer.Character
 local plr2 = game.Workspace:FindFirstChild(_G.Guy)
-plr1.HumanoidRootPart.CFrame = plr2.HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+plr1.HumanoidRootPart.CFrame = plr2.HumanoidRootPart.CFrame * CFrame.new(0,0,3)
 
 game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireServer(v,"LightPower2","StartCharging",game.workspace["".._G.Guy].HumanoidRootPart.CFrame,game.workspace["".._G.Guy].HumanoidRootPart,Left);
 
