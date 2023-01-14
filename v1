@@ -4365,7 +4365,7 @@ local Lp = game:GetService("Players").LocalPlayer
 local DevilFruit = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit
 local DevilFruit2 = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit2
 
-if DevilFruit.Value == "Light" or DevilFruit2.Value == "Light" and game:GetService("Workspace")["".._G.Guy].DamageScript.Enabled == true then
+if DevilFruit.Value == "Light" or DevilFruit2.Value == "Light" then
 _G.HarveyTrash = "VTCrv"
 end
 
@@ -4374,11 +4374,13 @@ local v = IntVariable["".._G.HarveyTrash]
 
 repeat wait()
 spawn(function()
+if game:GetService("Workspace")["".._G.Guy].DamageScript.Enabled == true then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(workspace["".._G.Guy].Torso.Position)
 
 game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireServer(v,"LightPower2","StartCharging",CFrame.new(2678.8994140625, 5575.01708984375, 7933.34033203125) * CFrame.Angles(2.5531468391418457, -0.26710399985313416, 2.967252254486084),Left);
 
 game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireServer(v,"LightPower2","StopCharging",game.workspace["".._G.Guy].HumanoidRootPart.CFrame,game.workspace["".._G.Guy].HumanoidRootPart,100)
+end
 end)
 until _G.idk == true
 end)
