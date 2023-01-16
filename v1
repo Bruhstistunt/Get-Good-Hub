@@ -4469,7 +4469,7 @@ local v = IntVariable["".._G.HarveyTrash]
 repeat wait()
 spawn(function()
 
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1492, 280, 2196)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1495, 281, 2195)
 
 game:GetService("Players").LocalPlayer.Character.Powers.String.RemoteEvent:FireServer(v,"StringPower2","Start",game.workspace[""..Sex].HumanoidRootPart.CFrame,game.workspace[""..Sex].HumanoidRootPart)
 end)
