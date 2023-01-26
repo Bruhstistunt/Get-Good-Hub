@@ -4266,7 +4266,7 @@ end)
 FruitFarmSection:NewToggle("Magma AutoFarm Gunners", "ez", function(state)
     if state then
             _G.Spawn0000 = true
-while _G.Spawn000 do
+while _G.Spawn0000 do
 local plrid = tostring(game.Players.LocalPlayer.UserId)
 workspace.UserData["User_"..plrid].UpdateHaki:FireServer()
 workspace.UserData["User_"..plrid].III:FireServer("On",1)
