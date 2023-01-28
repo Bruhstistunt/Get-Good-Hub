@@ -4276,8 +4276,9 @@ wait(0.5)
 local Players = game:GetService("Players")
 local Lp = Players.LocalPlayer
 local DevilFruit = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit
+local DevilFruit2 = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit2
 
-if DevilFruit.Value == "Magma" then
+if DevilFruit.Value == "Magma" or DevilFruit2.Value == "Magma" then
 _G.HarveyTrash = "VTCmel"
 end
 
