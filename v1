@@ -1324,24 +1324,13 @@ local args = {
     [2] = "SnowPower3",
     [3] = "StopCharging",
     [4] = game.workspace[""..Sex].Torso.CFrame,
-    [5] = game.workspace.PRIKA_PRIKA.HumanoidRootPart.Position,
+    [5] = game.workspace[""..Sex].HumanoidRootPart.Position,
     [6] = 15,
     [7] = 15
 }
 
-local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Snow);
-local v = IntVariable["".._G.HarveyTrash]
-local args = {
-    [1] = v,
-    [2] = "SnowPower3",
-    [3] = "StartCharging",
-    [4] = CFrame.new(-92225.34375, 14194, -170954.5) * CFrame.Angles(-0.08658850938081741, 1.2850522994995117, 0.08309400826692581),
-    [5] = workspace.Part,
-    [9] = "Right"
-}
-
 game:GetService("Players").LocalPlayer.Character.Powers.Snow.RemoteEvent:FireServer(unpack(args))
-
+wait(0.1)
 local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Snow);
 local v = IntVariable["".._G.HarveyTrash]
 local args = {
@@ -1349,24 +1338,13 @@ local args = {
     [2] = "SnowPower3",
     [3] = "StopCharging",
     [4] = game.workspace[""..Sex].Torso.CFrame,
-    [5] = game.workspace.PRIKA_PRIKA.HumanoidRootPart.Position,
+    [5] = game.workspace[""..Sex].HumanoidRootPart.Position,
     [6] = 15,
     [7] = 15
 }
 
-local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Snow);
-local v = IntVariable["".._G.HarveyTrash]
-local args = {
-    [1] = v,
-    [2] = "SnowPower3",
-    [3] = "StartCharging",
-    [4] = CFrame.new(-92225.34375, 14194, -170954.5) * CFrame.Angles(-0.08658850938081741, 1.2850522994995117, 0.08309400826692581),
-    [5] = workspace.Part,
-    [9] = "Right"
-}
-
 game:GetService("Players").LocalPlayer.Character.Powers.Snow.RemoteEvent:FireServer(unpack(args))
-
+wait(0.1)
 local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Snow);
 local v = IntVariable["".._G.HarveyTrash]
 local args = {
@@ -1374,24 +1352,13 @@ local args = {
     [2] = "SnowPower3",
     [3] = "StopCharging",
     [4] = game.workspace[""..Sex].Torso.CFrame,
-    [5] = game.workspace.PRIKA_PRIKA.HumanoidRootPart.Position,
+    [5] = game.workspace[""..Sex].HumanoidRootPart.Position,
     [6] = 15,
     [7] = 15
 }
 
-local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Snow);
-local v = IntVariable["".._G.HarveyTrash]
-local args = {
-    [1] = v,
-    [2] = "SnowPower3",
-    [3] = "StartCharging",
-    [4] = CFrame.new(-92225.34375, 14194, -170954.5) * CFrame.Angles(-0.08658850938081741, 1.2850522994995117, 0.08309400826692581),
-    [5] = workspace.Part,
-    [9] = "Right"
-}
-
 game:GetService("Players").LocalPlayer.Character.Powers.Snow.RemoteEvent:FireServer(unpack(args))
-
+wait(0.1)
 local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Snow);
 local v = IntVariable["".._G.HarveyTrash]
 local args = {
@@ -1399,24 +1366,13 @@ local args = {
     [2] = "SnowPower3",
     [3] = "StopCharging",
     [4] = game.workspace[""..Sex].Torso.CFrame,
-    [5] = game.workspace.PRIKA_PRIKA.HumanoidRootPart.Position,
+    [5] = game.workspace[""..Sex].HumanoidRootPart.Position,
     [6] = 15,
     [7] = 15
 }
 
-local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Snow);
-local v = IntVariable["".._G.HarveyTrash]
-local args = {
-    [1] = v,
-    [2] = "SnowPower3",
-    [3] = "StartCharging",
-    [4] = CFrame.new(-92225.34375, 14194, -170954.5) * CFrame.Angles(-0.08658850938081741, 1.2850522994995117, 0.08309400826692581),
-    [5] = workspace.Part,
-    [9] = "Right"
-}
-
 game:GetService("Players").LocalPlayer.Character.Powers.Snow.RemoteEvent:FireServer(unpack(args))
-
+wait(0.1)
 local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Snow);
 local v = IntVariable["".._G.HarveyTrash]
 local args = {
@@ -1424,7 +1380,7 @@ local args = {
     [2] = "SnowPower3",
     [3] = "StopCharging",
     [4] = game.workspace[""..Sex].Torso.CFrame,
-    [5] = game.workspace.PRIKA_PRIKA.HumanoidRootPart.Position,
+    [5] = game.workspace[""..Sex].HumanoidRootPart.Position,
     [6] = 15,
     [7] = 15
 }
