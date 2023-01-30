@@ -1294,7 +1294,7 @@ repeat wait(0)
 pcall(function()
 
 if game:GetService("Workspace")[""..Sex].HumanoidRootPart.Died.Playing == true then
-wait(4)
+wait(3.75)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-91962, 14197, -170875)
 local Lp = game:GetService("Players").LocalPlayer
 local DevilFruit = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit
@@ -1308,11 +1308,8 @@ local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Sn
 local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "SnowPower3",
-    [3] = "StartCharging",
-    [4] = CFrame.new(-92225.34375, 14194, -170954.5) * CFrame.Angles(-0.08658850938081741, 1.2850522994995117, 0.08309400826692581),
-    [5] = workspace.Part,
-    [9] = "Right"
+    [2] = "SnowPower5",
+    [3] = game.workspace[""..Sex]["Left Leg"].Position,
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Snow.RemoteEvent:FireServer(unpack(args))
@@ -1321,68 +1318,28 @@ local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Sn
 local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "SnowPower3",
-    [3] = "StopCharging",
-    [4] = game.workspace[""..Sex].Head.CFrame,
-    [5] = game.workspace[""..Sex].Head.CFrame,
-    [6] = 15,
-    [7] = 15
+    [2] = "BallControl",
+    [3] = game.workspace[""..Sex]["Left Leg"].Position
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Snow.RemoteEvent:FireServer(unpack(args))
-wait(0.1)
+
 local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Snow);
 local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "SnowPower3",
-    [3] = "StopCharging",
-    [4] = game.workspace[""..Sex].Head.CFrame,
-    [5] = game.workspace[""..Sex].Head.CFrame,
-    [6] = 15,
-    [7] = 15
+    [2] = "SnowPower5",
+    [3] = game.workspace[""..Sex]["Right Leg"].Position,
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Snow.RemoteEvent:FireServer(unpack(args))
-wait(0.1)
+
 local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Snow);
 local v = IntVariable["".._G.HarveyTrash]
 local args = {
     [1] = v,
-    [2] = "SnowPower3",
-    [3] = "StopCharging",
-    [4] = game.workspace[""..Sex].Head.CFrame,
-    [5] = game.workspace[""..Sex].Head.CFrame,
-    [6] = 15,
-    [7] = 15
-}
-
-game:GetService("Players").LocalPlayer.Character.Powers.Snow.RemoteEvent:FireServer(unpack(args))
-wait(0.1)
-local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Snow);
-local v = IntVariable["".._G.HarveyTrash]
-local args = {
-    [1] = v,
-    [2] = "SnowPower3",
-    [3] = "StopCharging",
-    [4] = game.workspace[""..Sex].Head.CFrame,
-    [5] = game.workspace[""..Sex].Head.CFrame,
-    [6] = 15,
-    [7] = 15
-}
-
-game:GetService("Players").LocalPlayer.Character.Powers.Snow.RemoteEvent:FireServer(unpack(args))
-wait(0.1)
-local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Snow);
-local v = IntVariable["".._G.HarveyTrash]
-local args = {
-    [1] = v,
-    [2] = "SnowPower3",
-    [3] = "StopCharging",
-    [4] = game.workspace[""..Sex].Head.CFrame,
-    [5] = game.workspace[""..Sex].Head.CFrame,
-    [6] = 15,
-    [7] = 15
+    [2] = "BallControl",
+    [3] = game.workspace[""..Sex]["Right Leg"].Position
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Snow.RemoteEvent:FireServer(unpack(args))
