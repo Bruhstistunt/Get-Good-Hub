@@ -1323,8 +1323,8 @@ local args = {
     [1] = v,
     [2] = "SnowPower3",
     [3] = "StopCharging",
-    [4] = game.workspace[""..Sex].Torso.CFrame,
-    [5] = game.workspace[""..Sex].HumanoidRootPart.Position,
+    [4] = game.workspace[""..Sex].Head.CFrame,
+    [5] = game.workspace[""..Sex].Head.CFrame,
     [6] = 15,
     [7] = 15
 }
@@ -1337,8 +1337,8 @@ local args = {
     [1] = v,
     [2] = "SnowPower3",
     [3] = "StopCharging",
-    [4] = game.workspace[""..Sex].Torso.CFrame,
-    [5] = game.workspace[""..Sex].HumanoidRootPart.Position,
+    [4] = game.workspace[""..Sex].Head.CFrame,
+    [5] = game.workspace[""..Sex].Head.CFrame,
     [6] = 15,
     [7] = 15
 }
@@ -1351,8 +1351,8 @@ local args = {
     [1] = v,
     [2] = "SnowPower3",
     [3] = "StopCharging",
-    [4] = game.workspace[""..Sex].Torso.CFrame,
-    [5] = game.workspace[""..Sex].HumanoidRootPart.Position,
+    [4] = game.workspace[""..Sex].Head.CFrame,
+    [5] = game.workspace[""..Sex].Head.CFrame,
     [6] = 15,
     [7] = 15
 }
@@ -1365,8 +1365,8 @@ local args = {
     [1] = v,
     [2] = "SnowPower3",
     [3] = "StopCharging",
-    [4] = game.workspace[""..Sex].Torso.CFrame,
-    [5] = game.workspace[""..Sex].HumanoidRootPart.Position,
+    [4] = game.workspace[""..Sex].Head.CFrame,
+    [5] = game.workspace[""..Sex].Head.CFrame,
     [6] = 15,
     [7] = 15
 }
@@ -1379,8 +1379,8 @@ local args = {
     [1] = v,
     [2] = "SnowPower3",
     [3] = "StopCharging",
-    [4] = game.workspace[""..Sex].Torso.CFrame,
-    [5] = game.workspace[""..Sex].HumanoidRootPart.Position,
+    [4] = game.workspace[""..Sex].Head.CFrame,
+    [5] = game.workspace[""..Sex].Head.CFrame,
     [6] = 15,
     [7] = 15
 }
