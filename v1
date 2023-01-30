@@ -1325,8 +1325,108 @@ local args = {
     [3] = "StopCharging",
     [4] = game.workspace[""..Sex].Torso.CFrame,
     [5] = game.workspace.PRIKA_PRIKA.HumanoidRootPart.Position,
-    [6] = 100,
-    [7] = 100
+    [6] = 15,
+    [7] = 15
+}
+
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Snow);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "SnowPower3",
+    [3] = "StartCharging",
+    [4] = CFrame.new(-92225.34375, 14194, -170954.5) * CFrame.Angles(-0.08658850938081741, 1.2850522994995117, 0.08309400826692581),
+    [5] = workspace.Part,
+    [9] = "Right"
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Snow.RemoteEvent:FireServer(unpack(args))
+
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Snow);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "SnowPower3",
+    [3] = "StopCharging",
+    [4] = game.workspace[""..Sex].Torso.CFrame,
+    [5] = game.workspace.PRIKA_PRIKA.HumanoidRootPart.Position,
+    [6] = 15,
+    [7] = 15
+}
+
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Snow);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "SnowPower3",
+    [3] = "StartCharging",
+    [4] = CFrame.new(-92225.34375, 14194, -170954.5) * CFrame.Angles(-0.08658850938081741, 1.2850522994995117, 0.08309400826692581),
+    [5] = workspace.Part,
+    [9] = "Right"
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Snow.RemoteEvent:FireServer(unpack(args))
+
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Snow);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "SnowPower3",
+    [3] = "StopCharging",
+    [4] = game.workspace[""..Sex].Torso.CFrame,
+    [5] = game.workspace.PRIKA_PRIKA.HumanoidRootPart.Position,
+    [6] = 15,
+    [7] = 15
+}
+
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Snow);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "SnowPower3",
+    [3] = "StartCharging",
+    [4] = CFrame.new(-92225.34375, 14194, -170954.5) * CFrame.Angles(-0.08658850938081741, 1.2850522994995117, 0.08309400826692581),
+    [5] = workspace.Part,
+    [9] = "Right"
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Snow.RemoteEvent:FireServer(unpack(args))
+
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Snow);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "SnowPower3",
+    [3] = "StopCharging",
+    [4] = game.workspace[""..Sex].Torso.CFrame,
+    [5] = game.workspace.PRIKA_PRIKA.HumanoidRootPart.Position,
+    [6] = 15,
+    [7] = 15
+}
+
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Snow);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "SnowPower3",
+    [3] = "StartCharging",
+    [4] = CFrame.new(-92225.34375, 14194, -170954.5) * CFrame.Angles(-0.08658850938081741, 1.2850522994995117, 0.08309400826692581),
+    [5] = workspace.Part,
+    [9] = "Right"
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Snow.RemoteEvent:FireServer(unpack(args))
+
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Snow);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "SnowPower3",
+    [3] = "StopCharging",
+    [4] = game.workspace[""..Sex].Torso.CFrame,
+    [5] = game.workspace.PRIKA_PRIKA.HumanoidRootPart.Position,
+    [6] = 15,
+    [7] = 15
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Snow.RemoteEvent:FireServer(unpack(args))
