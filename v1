@@ -1288,13 +1288,12 @@ end)
 until _G.idk == false
 end)
 
-AutoFarmAltsSection:NewTextBox("Snow Kill Target", "ez", function(txt)
-local Sex = (txt)
-repeat wait(0)
+AutoFarmAltsSection:NewToggle("Snow Kill Target", "ez", function(state)
+    if state then
+            _G.Spawnnn = true
+while _G.Spawnnn do
+wait()
 pcall(function()
-
-if game:GetService("Workspace")[""..Sex].HumanoidRootPart.Died.Playing == true then
-wait(3.75)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-91962, 14197, -170875)
 local Lp = game:GetService("Players").LocalPlayer
 local DevilFruit = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit
@@ -1304,6 +1303,8 @@ if DevilFruit.Value == "Snow" or DevilFruit2.Value == "Snow" then
 _G.HarveyTrash = "VTCqkxtn"
 end
 
+wait(0.2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-91962, 14197, -170875)
 local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Snow);
 local v = IntVariable["".._G.HarveyTrash]
 local args = {
@@ -1313,7 +1314,8 @@ local args = {
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Snow.RemoteEvent:FireServer(unpack(args))
-
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-91962, 14197, -170875)
+wait(0.2)
 local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Snow);
 local v = IntVariable["".._G.HarveyTrash]
 local args = {
@@ -1323,7 +1325,8 @@ local args = {
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Snow.RemoteEvent:FireServer(unpack(args))
-
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-91962, 14197, -170875)
+wait(0.2)
 local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Snow);
 local v = IntVariable["".._G.HarveyTrash]
 local args = {
@@ -1333,7 +1336,8 @@ local args = {
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Snow.RemoteEvent:FireServer(unpack(args))
-
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-91962, 14197, -170875)
+wait(0.2)
 local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Snow);
 local v = IntVariable["".._G.HarveyTrash]
 local args = {
@@ -1343,7 +1347,8 @@ local args = {
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Snow.RemoteEvent:FireServer(unpack(args))
-
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-91962, 14197, -170875)
+wait(0.2)
 local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Snow);
 local v = IntVariable["".._G.HarveyTrash]
 local args = {
@@ -1353,7 +1358,8 @@ local args = {
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Snow.RemoteEvent:FireServer(unpack(args))
-
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-91962, 14197, -170875)
+wait(0.2)
 local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Snow);
 local v = IntVariable["".._G.HarveyTrash]
 local args = {
@@ -1363,7 +1369,8 @@ local args = {
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Snow.RemoteEvent:FireServer(unpack(args))
-
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-91962, 14197, -170875)
+wait(0.2)
 local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Snow);
 local v = IntVariable["".._G.HarveyTrash]
 local args = {
@@ -1373,7 +1380,8 @@ local args = {
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Snow.RemoteEvent:FireServer(unpack(args))
-
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-91962, 14197, -170875)
+wait(0.2)
 local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Snow);
 local v = IntVariable["".._G.HarveyTrash]
 local args = {
@@ -1384,8 +1392,9 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.Powers.Snow.RemoteEvent:FireServer(unpack(args))
 end
-end)
-until _G.idk == false
+    else
+        _G.Spawnnn = false
+    end
 end)
 
 AutoFarmAltsSection:NewTextBox("Rumble Kill Target", "ez", function(txt)
