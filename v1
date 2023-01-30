@@ -1182,7 +1182,7 @@ request(abcdef)
 end)
 end)
 
-local AutoFarmAltsSection = AutoFarmAlts:NewSection("Light/Rumble👑")
+local AutoFarmAltsSection = AutoFarmAlts:NewSection("Light/Rumble/Snow👑")
 AutoFarmAltsSection:NewButton("Tp To Middle", "ez haha", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-91962, 14197, -170875)
 end)
@@ -1288,13 +1288,46 @@ end)
 until _G.idk == false
 end)
 
+AutoFarmAltsSection:NewTextBox("Snow Kill Target", "ez", function(txt)
+local Sex = (txt)
+repeat wait(0)
+pcall(function()
+
+if game:GetService("Workspace")[""..Sex].HumanoidRootPart.Died.Playing == true then
+wait(4)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-91962, 14197, -170875)
+local Lp = game:GetService("Players").LocalPlayer
+local DevilFruit = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit
+local DevilFruit2 = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit2
+
+if DevilFruit.Value == "Snow" or DevilFruit2.Value == "Snow" then
+_G.HarveyTrash = "VTCqkxtn"
+end
+
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Snow);
+local v = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = v,
+    [2] = "SnowPower3",
+    [3] = "StopCharging",
+    [4] = game.workspace[""..Sex].Torso.CFrame,
+    [5] = game.workspace.PRIKA_PRIKA.HumanoidRootPart.Position,
+    [6] = 100,
+    [7] = 100
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Snow.RemoteEvent:FireServer(unpack(args))
+end
+end)
+until _G.idk == false
+end)
+
 AutoFarmAltsSection:NewTextBox("Rumble Kill Target", "ez", function(txt)
 local Sex = (txt)
 repeat wait(0)
 pcall(function()
 
 if game:GetService("Workspace")[""..Sex].HumanoidRootPart.Died.Playing == true then
-print("Person Died... (sent from rumble auto farm..)")
 wait(4)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-91962, 14197, -170875)
 
