@@ -7,6 +7,7 @@ print(game.Workspace.GlobalReference.Version.Value)
 wait(0.25)
 print("Checking WhiteList..")
 wait(0.60)
+print(game:GetService("RbxAnalyticsService"):GetClientId())
 wait(1.35)
 print("Game Version/HWID Checked, Loading Hub..")
 
@@ -1390,6 +1391,7 @@ local args = {
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Snow.RemoteEvent:FireServer(unpack(args))
+end)
 end
     else
         _G.Spawnnn = false
