@@ -4469,32 +4469,6 @@ end
 end)
 
 -- People Section --
-PeopleSection:NewToggle("God Mode", "should work?..", function(state)
-    if state then
-            _G.GodMode = true
-while _G.GodMode do
-wait()
-spawn(function()
-game:GetService("ReplicatedStorage").Resources.ObsGui.Frame.BackgroundColor3 = Color3.fromRGB(255,0,0)
-workspace[game.Players.LocalPlayer.Name].Damage:Destroy()
-
-local mt = getrawmetatable(game)
-setreadonly(mt, false)
-local old = mt.__namecall
-
-mt.__namecall = newcclosure(function(self, ...)
-    local method = getnamecallmethod()
-    if method == "FireServer" and self.Name == "Drown" then
-         return wait(9e99)
-    end
-    return old(self, ...)
-end)
-end)
-end
-    else
-        _G.GodMode = false
-    end
-end)
 
 PeopleSection:NewButton("Light Kill Target", "ez", function()
 
