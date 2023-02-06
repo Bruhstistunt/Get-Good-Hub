@@ -5212,7 +5212,127 @@ for i,v in pairs(HWIDTable) do
 	if v == HWID then
 		local Drinks = Window:NewTab("Premium")
 		
-local DrinksSection = Drinks:NewSection("Dupe Drinks👑")
+local DrinksSection = Drinks:NewSection("Fruit Notifier👑")
+DrinksSection:NewToggle("Fruit Stealer", "rn supports only light", function(state)
+    if state then
+            _G.Stealer = true
+while _G.Stealer do
+wait()
+pcall(function()
+-- stealer --
+function Callback(answer)
+    if answer == "Yes" then
+wait()
+for i,v in pairs(game.Players:GetPlayers()) do
+for i,x in pairs(v.Backpack:GetChildren()) do
+if x.Name == "Candy Fruit" or x.Name == "Chilly Fruit" or x.Name == "Candy Fruit" or x.Name == "Dark Fruit" or x.Name == "Flare Fruit" or x.Name == "Gas Fruit" or x.Name == "Gravity Fruit" or x.Name == "Hollow Fruit" or x.Name == "Light Fruit" or x.Name == "Magma Fruit" or x.Name == "Ope Fruit" or x.Name == "Phoenix Fruit" or x.Name == "Plasma Fruit" or x.Name == "Quake Fruit" or x.Name == "Rumble Fruit" or x.Name == "Sand Fruit" or x.Name == "Smoke Fruit" or x.Name == "Snow Fruit" or x.Name == "Vampire Fruit" or x.Name == "Venom Fruit" then
+local Lp = game:GetService("Players").LocalPlayer
+local DevilFruit = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit
+local DevilFruit2 = game:GetService("Workspace").UserData["User_"..Lp.UserId].Data.DevilFruit2
+
+if DevilFruit.Value == "Light" or DevilFruit2.Value == "Light" then
+_G.HarveyTrash = "VTCrv"
+end
+
+if DevilFruit.Value == "Vampire" or DevilFruit2.Value == "Vampire" then
+_G.HarveyTrash = "VTCjwf"
+end
+
+if DevilFruit.Value == "Magma" or DevilFruit2.Value == "Magma" then
+_G.HarveyTrash = "VTCmel"
+end
+
+if DevilFruit.Value == "Chilly" or DevilFruit2.Value == "Chilly" then
+_G.HarveyTrash = "VTCewddsfe"
+end
+
+if DevilFruit.Value == "Flare" or DevilFruit2.Value == "Flare" then
+_G.HarveyTrash = "VTCmgwcm"
+end
+
+if DevilFruit.Value == "Bomb" or DevilFruit2.Value == "Bomb" then
+_G.HarveyTrash = "VTCcpkghc"
+end
+
+if DevilFruit.Value == "Gas" or DevilFruit2.Value == "Gas" then
+_G.HarveyTrash = "VTCtb"
+end
+
+if DevilFruit.Value == "Rumble" or DevilFruit2.Value == "Rumble" then
+_G.HarveyTrash = "VTCzyhf"
+end
+
+if DevilFruit.Value == "Phoenix" or DevilFruit2.Value == "Phoenix" then
+_G.HarveyTrash = "VTCytb"
+end
+
+if DevilFruit.Value == "String" or DevilFruit2.Value == "String"then
+_G.HarveyTrash = "VTCjwbvx"
+end
+
+if DevilFruit.Value == "Quake" or DevilFruit2.Value == "Quake" then
+_G.HarveyTrash = "VTCebvc"
+end
+
+for i = 1,35 do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(workspace[""..v.Name].Torso.Position)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local x = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = x,
+    [2] = "LightPower2",
+    [3] = "StartCharging",
+    [4] = CFrame.new(Vector3.new(1986.9449462890625, 215, 903.1795654296875), Vector3.new(0.6054630279541016, -0.3926812410354614, -0.6922542452812195)),
+    [5] = workspace:WaitForChild("Island8"):WaitForChild("Path"):WaitForChild("Stone"),
+    [9] = "Left"
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireServer(unpack(args))
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(workspace[""..v.Name].Torso.Position)
+local IntVariable  = getsenv(game:GetService("Workspace")[""..Lp.Name].Powers.Light);
+local x = IntVariable["".._G.HarveyTrash]
+local args = {
+    [1] = x,
+    [2] = "LightPower2",
+    [3] = "StopCharging",
+    [4] = game.workspace[""..v.Name].Torso.CFrame,
+    [5] = workspace:WaitForChild("Island8"):WaitForChild("Path"):WaitForChild("Stone"),
+    [6] = 100
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireServer(unpack(args))
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(workspace[""..v.Name].Torso.Position)
+												end
+									end
+    						end
+						end
+				end
+		end
+
+local Bindable = Instance.new("BindableFunction")
+Bindable.OnInvoke = Callback
+
+for i,v in pairs(game.Players:GetPlayers()) do
+   for i,x in pairs(v.Backpack:GetChildren()) do
+       if x.Name == "Candy Fruit" or x.Name == "Chilly Fruit" or x.Name == "Candy Fruit" or x.Name == "Dark Fruit" or x.Name == "Flare Fruit" or x.Name == "Gas Fruit" or x.Name == "Gravity Fruit" or x.Name == "Hollow Fruit" or x.Name == "Light Fruit" or x.Name == "Magma Fruit" or x.Name == "Ope Fruit" or x.Name == "Phoenix Fruit" or x.Name == "Plasma Fruit" or x.Name == "Quake Fruit" or x.Name == "Rumble Fruit" or x.Name == "Sand Fruit" or x.Name == "Smoke Fruit" or x.Name == "Snow Fruit" or x.Name == "Vampire Fruit" or x.Name == "Venom Fruit" then
+game.StarterGui:SetCore("SendNotification", {
+	Title = "Fruit Notifier";
+	Text = v.Name.. " found " ..x.Name..", steal?";
+	Button1 = "Yes";
+	Button2 = "No";
+	Duration = 7;
+	Callback = Bindable
+})
+wait(1)
+end
+end
+end
+end)
+end
+    else
+        _G.Stealer = false
+    end
+end)
 local DrinksSection = Drinks:NewSection("Dupe Compasses👑")
 DrinksSection:NewButton("Dupe Compass", "at least 1 to be ready so it would work", function()
 -- claiming sam
