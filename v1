@@ -1,6 +1,6 @@
 
 
-if game.Workspace.GlobalReference.Version.Value == "Game Version: 7.9.4a" or game.Workspace.GlobalReference.Version.Value == "Game Version: 7.9.1d" or game.Workspace.GlobalReference.Version.Value == "Game Version: 7.9.1a" then
+if game.Workspace.GlobalReference.Version.Value == "Game Version: 7.9.5a" or game.Workspace.GlobalReference.Version.Value == "Game Version: 7.9.1d" or game.Workspace.GlobalReference.Version.Value == "Game Version: 7.9.1a" then
 print("Checking game version..")
 wait(0.50)
 print(game.Workspace.GlobalReference.Version.Value)
