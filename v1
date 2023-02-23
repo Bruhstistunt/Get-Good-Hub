@@ -1704,12 +1704,12 @@ end
 	end
 end)
 
-AutoFarmAltsSection:NewTextBox("Auto-Tp 1", "ez", function(txt)
-local Sex = (txt)
-repeat wait(0)
-pcall(function()
-
-if game:GetService("Players")[""..Sex].Backpack["Black Leg"] then
+AutoFarmAltsSection:NewToggle("Auto-Tp 1", "it will autospawn and autokill", function(state)
+    if state then
+            _G.Spawngas1 = true
+while _G.Spawngas1 do
+       wait(0.2)     
+    spawn(function()  
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-92492, 14197, -171152)
 wait(2)
 if game.Players.LocalPlayer.Character.Humanoid.Health == 100 then
@@ -1736,17 +1736,19 @@ game:GetService("Players").LocalPlayer.Character.Drown:FireServer(unpack(args))
 local args = {[1] = "NOPLS"}
 game:GetService("Players").LocalPlayer.Character.Drown:FireServer(unpack(args))
 end
+end)
 end
-end)
-until _G.idk == false
+    else
+        _G.Spawngas1 = false
+    end
 end)
 
-AutoFarmAltsSection:NewTextBox("Auto-Tp 2", "ez", function(txt)
-local Sex = (txt)
-repeat wait(0)
-pcall(function()
-
-if game:GetService("Players")[""..Sex].Backpack["Black Leg"] then
+AutoFarmAltsSection:NewToggle("Auto-Tp 2", "it will autospawn and autokill", function(state)
+    if state then
+            _G.Spawngas2 = true
+while _G.Spawngas2 do
+       wait(0.2)     
+    spawn(function()  
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-92488, 14197, -171156)
 wait(2)
 if game.Players.LocalPlayer.Character.Humanoid.Health == 100 then
@@ -1773,17 +1775,19 @@ game:GetService("Players").LocalPlayer.Character.Drown:FireServer(unpack(args))
 local args = {[1] = "NOPLS"}
 game:GetService("Players").LocalPlayer.Character.Drown:FireServer(unpack(args))
 end
+end)
 end
-end)
-until _G.idk == false
+    else
+        _G.Spawngas2 = false
+    end
 end)
 
-AutoFarmAltsSection:NewTextBox("Auto-Tp 3", "ez", function(txt)
-local Sex = (txt)
-repeat wait(0)
-pcall(function()
-
-if game:GetService("Players")[""..Sex].Backpack["Black Leg"] then
+AutoFarmAltsSection:NewToggle("Auto-Tp 3", "it will autospawn and autokill", function(state)
+    if state then
+            _G.Spawngas3 = true
+while _G.Spawngas3 do
+       wait(0.2)     
+    spawn(function()  
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-92492, 14197, -171160)
 wait(2)
 if game.Players.LocalPlayer.Character.Humanoid.Health == 100 then
@@ -1810,17 +1814,19 @@ game:GetService("Players").LocalPlayer.Character.Drown:FireServer(unpack(args))
 local args = {[1] = "NOPLS"}
 game:GetService("Players").LocalPlayer.Character.Drown:FireServer(unpack(args))
 end
+end)
 end
-end)
-until _G.idk == false
+    else
+        _G.Spawngas3 = false
+    end
 end)
 
-AutoFarmAltsSection:NewTextBox("Auto-Tp 4", "ez", function(txt)
-local Sex = (txt)
-repeat wait(0)
-pcall(function()
-
-if game:GetService("Players")[""..Sex].Backpack["Black Leg"] then
+AutoFarmAltsSection:NewToggle("Auto-Tp 4", "it will autospawn and autokill", function(state)
+    if state then
+            _G.Spawngas4 = true
+while _G.Spawngas4 do
+       wait(0.2)     
+    spawn(function()  
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-92498, 14197, -171156)
 wait(2)
 if game.Players.LocalPlayer.Character.Humanoid.Health == 100 then
@@ -1847,9 +1853,11 @@ game:GetService("Players").LocalPlayer.Character.Drown:FireServer(unpack(args))
 local args = {[1] = "NOPLS"}
 game:GetService("Players").LocalPlayer.Character.Drown:FireServer(unpack(args))
 end
-end
 end)
-until _G.idk == false
+end
+    else
+        _G.Spawngas4 = false
+    end
 end)
 
 local AutoFarmAltsSection = AutoFarmAlts:NewSection("Bomb/Gum(doesnt work yet)👑")
