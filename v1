@@ -84,7 +84,7 @@ local StrHP = Lp.PlayerGui.HealthBar.Frame.Label.Text
 
 repeat wait() until Lp.PlayerGui.HealthBar.Frame.Label.Text < StrHP
 if game.Players.LocalPlayer.Character.Humanoid.Health == 100 then
-for i = 1,10 do
+for i = 1,1 do
 local args = {[1] = "NOPLS"}
 game:GetService("Players").LocalPlayer.Character.Drown:FireServer(unpack(args))
 end
