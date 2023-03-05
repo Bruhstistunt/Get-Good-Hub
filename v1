@@ -72,7 +72,7 @@ end)
 
 GeneralSection:NewButton("Auto-Tp & Kill", "ez", function()
 while wait(0) do
-pcall(function()
+spawn(function()
 if game:GetService("Players").Bruhstistunt.Backpack.Melee then
 game:GetService("Players").LocalPlayer.PlayerGui.HealthBar.Frame.Visible = true
 game:GetService("Players").LocalPlayer.PlayerGui.HealthBar.Frame.HealthBar.Visible = true
