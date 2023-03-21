@@ -1,26 +1,23 @@
 
 
 if game.Workspace.GlobalReference.Version.Value == "Game Version: 7.9.5a" or game.Workspace.GlobalReference.Version.Value == "Game Version: 7.9.6" or game.Workspace.GlobalReference.Version.Value == "Game Version: 7.9.1a" then
-print("Checking game version..")
-wait(0.50)
-print(game.Workspace.GlobalReference.Version.Value)
-wait(0.25)
-print("Checking WhiteList..")
-wait(0.60)
-print(game:GetService("RbxAnalyticsService"):GetClientId())
-wait(1.35)
-print("Game Version/HWID Checked, Loading Hub..")
+game.StarterGui:SetCore("SendNotification", {
+	Title = "Security";
+	Text = "Checking Game Version/HWID";
+	Duration = 3
+})
+wait(2.5)
 
 local HWIDTable = loadstring(game:HttpGet("https://pastebin.com/raw/Xkga2yAx"))()
 local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
 
 for i,v in pairs(HWIDTable) do
 	if v == HWID then
-		print("WhiteList Passed... Loading Hub..")
-		
-wait(3.35)
-print("Loaded in 4.73 seconds")
-
+	game.StarterGui:SetCore("SendNotification", {
+	Title = "Game Version/HWID Checked, Loading Hub..";
+	Text = "";
+	Duration = 2
+})
 loadstring(game:HttpGet("https://pastebin.com/raw/XiN9XAaM"))() -- ez
 
 local vu = game:GetService("VirtualUser")
@@ -5559,5 +5556,11 @@ end
 end
 
 end
+
+game.StarterGui:SetCore("SendNotification", {
+	Title = "Bloody Hub Loaded";
+	Text = "";
+	Duration = 3
+})
 
 loadstring(game:HttpGet("https://pastebin.com/raw/RC6HtXg0"))() -- stealing fruits
